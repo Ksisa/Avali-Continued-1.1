@@ -1,0 +1,760 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Small vanilla food. -->
+  
+  <!-- CookSmallSimple -->
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook5SmallSimple</defName>
+		<label>cook small simple meals in bulk (5)</label>
+		<description>Cook five straightforward meals from less ingredients, sized for something smaller than a human.</description>
+		<jobString>Cooking five simple meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+				</filter>
+				<count>1.5</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealSmallSimple>5</MealSmallSimple>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<workAmount>900</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook10SmallSimple</defName>
+		<label>cook small simple meals in bulk (10)</label>
+		<description>Cook ten straightforward meals from less ingredients, sized for something smaller than a human.</description>
+		<jobString>Cooking ten simple meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealSmallSimple>10</MealSmallSimple>
+		</products>
+			<skillRequirements>
+				<Cooking>5</Cooking>
+			</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<workAmount>1800</workAmount>
+	</RecipeDef>
+	
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook20SmallSimple</defName>
+		<label>cook small simple meals in bulk (20)</label>
+		<description>Cook twenty straightforward meals from less ingredients, sized for something smaller than a human.</description>
+		<jobString>Cooking twenty simple meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealSmallSimple>20</MealSmallSimple>
+		</products>
+			<skillRequirements>
+				<Cooking>7</Cooking>
+			</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<workAmount>3600</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook50SmallSimple</defName>
+		<label>cook small simple meals in bulk (50)</label>
+		<description>Cook fifty straightforward meals from less ingredients, sized for something smaller than a human.</description>
+		<jobString>Cooking fifty simple meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealSmallSimple>20</MealSmallSimple>
+		</products>
+			<skillRequirements>
+				<Cooking>10</Cooking>
+			</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<workAmount>9000</workAmount>
+	</RecipeDef>
+  
+  <!-- CookMealStackSmallFine -->
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook5SmallFine</defName>
+		<label>cook small fine meals in bulk (5)</label>
+		<description>Cook five somewhat complex meals from a combination of meat and plant ingredients, sized for something smaller than a human.</description>
+		<jobString>Cooking five small fine meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+				</filter>
+				<count>0.75</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.75</count>
+			</li>
+		</ingredients>
+		<products>
+      <MealSmallFine>5</MealSmallFine>
+    </products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+    <workAmount>1350</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook10SmallFine</defName>
+		<label>cook small fine meals in bulk (10)</label>
+		<description>Cook ten somewhat complex meals from a combination of meat and plant ingredients, sized for something smaller than a human.</description>
+		<jobString>Cooking ten small fine meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+				</filter>
+				<count>1.5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>1.5</count>
+			</li>
+		</ingredients>
+		<products>
+      <MealSmallFine>10</MealSmallFine>
+    </products>
+		<skillRequirements>
+			<Cooking>7</Cooking>
+		</skillRequirements>
+    <workAmount>2700</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook20SmallFine</defName>
+		<label>cook small fine meals in bulk (20)</label>
+		<description>Cook twenty somewhat complex meals from a combination of meat and plant ingredients, sized for something smaller than a human.</description>
+		<jobString>Cooking twenty small fine meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<products>
+      <MealSmallFine>20</MealSmallFine>
+    </products>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+    <workAmount>5400</workAmount>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook50SmallFine</defName>
+		<label>cook small fine meals in bulk (50)</label>
+		<description>Cook fifty somewhat complex meals from a combination of meat and plant ingredients, sized for something smaller than a human.</description>
+		<jobString>Cooking fifty small fine meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+				</filter>
+				<count>7.5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>7.5</count>
+			</li>
+		</ingredients>
+		<products>
+      <MealSmallFine>50</MealSmallFine>
+    </products>
+		<skillRequirements>
+			<Cooking>13</Cooking>
+		</skillRequirements>
+    <workAmount>13500</workAmount>
+	</RecipeDef>
+	
+  <!-- CookMealStackSmallLavish -->
+  <RecipeDef ParentName="CookMealBase">
+		<defName>Cook5SmallLavish</defName>
+		<label>cook small lavish meals in bulk (5)</label>
+		<description>Cook five very complex meals from a combination of meat and plant ingredients. Much of the ingredients are wasted. Sized for something smaller than a human.</description>
+		<jobString>Cooking five small lavish meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+				</filter>
+				<count>1.5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>1.5</count>
+			</li>
+		</ingredients>
+		<products>
+      <MealSmallLavish>5</MealSmallLavish>
+    </products>
+		<skillRequirements>
+			<Cooking>7</Cooking>
+		</skillRequirements>
+    <workAmount>2400</workAmount>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookMealBase">
+		<defName>Cook10SmallLavish</defName>
+		<label>cook small lavish meals in bulk (10)</label>
+		<description>Cook ten very complex meals from a combination of meat and plant ingredients. Much of the ingredients are wasted. Sized for something smaller than a human.</description>
+		<jobString>Cooking ten small lavish meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<products>
+      <MealSmallLavish>10</MealSmallLavish>
+    </products>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+    <workAmount>4800</workAmount>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookMealBase">
+		<defName>Cook20SmallLavish</defName>
+		<label>cook small lavish meals in bulk (20)</label>
+		<description>Cook twenty very complex meals from a combination of meat and plant ingredients. Much of the ingredients are wasted. Sized for something smaller than a human.</description>
+		<jobString>Cooking twenty small lavish meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<products>
+      <MealSmallLavish>20</MealSmallLavish>
+    </products>
+		<skillRequirements>
+			<Cooking>13</Cooking>
+		</skillRequirements>
+    <workAmount>9600</workAmount>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookMealBase">
+		<defName>Cook50SmallLavish</defName>
+		<label>cook small lavish meals in bulk (50)</label>
+		<description>Cook fifty very complex meals from a combination of meat and plant ingredients. Much of the ingredients are wasted. Sized for something smaller than a human.</description>
+		<jobString>Cooking fifty small lavish meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<products>
+      <MealSmallLavish>50</MealSmallLavish>
+    </products>
+		<skillRequirements>
+			<Cooking>16</Cooking>
+		</skillRequirements>
+    <workAmount>24000</workAmount>
+  </RecipeDef>
+  
+  <!-- CookMealStackSmallSurvival -->
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook5SmallSurvival</defName>
+		<label>cook small survival meals in bulk (5)</label>
+		<description>Prepare five packaged survival meals from a combination of meat and plant ingredients, sized for something smaller than a human. Much of the ingredients are wasted in the preservation process.</description>
+		<jobString>Cooking five small survival meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealSmallSurvivalPack>5</MealSmallSurvivalPack>
+		</products>
+		<skillRequirements>
+			<Cooking>7</Cooking>
+		</skillRequirements>
+		<workAmount>1500</workAmount>
+		<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook10SmallSurvival</defName>
+		<label>cook small survival meals in bulk (10)</label>
+		<description>Prepare ten packaged survival meals from a combination of meat and plant ingredients, sized for something smaller than a human. Much of the ingredients are wasted in the preservation process.</description>
+		<jobString>Cooking ten small survival meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealSmallSurvivalPack>10</MealSmallSurvivalPack>
+		</products>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+		<workAmount>3000</workAmount>
+		<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook20SmallSurvival</defName>
+		<label>cook small survival meals in bulk (20)</label>
+		<description>Prepare twenty packaged survival meals from a combination of meat and plant ingredients, sized for something smaller than a human. Much of the ingredients are wasted in the preservation process.</description>
+		<jobString>Cooking twenty small survival meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealSmallSurvivalPack>20</MealSmallSurvivalPack>
+		</products>
+		<skillRequirements>
+			<Cooking>13</Cooking>
+		</skillRequirements>
+		<workAmount>6000</workAmount>
+		<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook50SmallSurvival</defName>
+		<label>cook small survival meals in bulk (50)</label>
+		<description>Prepare fifty packaged survival meals from a combination of meat and plant ingredients, sized for something smaller than a human. Much of the ingredients are wasted in the preservation process.</description>
+		<jobString>Cooking fifty small survival meals.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealSmallSurvivalPack>50</MealSmallSurvivalPack>
+		</products>
+		<skillRequirements>
+			<Cooking>16</Cooking>
+		</skillRequirements>
+		<workAmount>15000</workAmount>
+		<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Avali-specific food. -->
+	
+  <!-- CookStackAvaliSpicyJerky -->
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook20SpicyJerky</defName>
+		<label>cook spicy jerky in bulk (20)</label>
+		<description>Cooks twenty chunks of seasoned jerky, popular with hunters and explorers.</description>
+		<jobString>Cooking twenty spicy jerky.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawNakatiBarks</li>
+					</thingDefs>
+				</filter>
+				<count>1</count> <!-- 0.05 = 1 -->
+			</li>
+		</ingredients>
+		<products>
+			<AvaliSpicyJerky>20</AvaliSpicyJerky>
+		</products>
+		<researchPrerequisite>AvaliPlants</researchPrerequisite>
+		<skillRequirements>
+			<Cooking>7</Cooking>
+		</skillRequirements>
+		<workAmount>5400</workAmount>
+	</RecipeDef>
+	
+	<!-- CookStackAvaliPiruNoodle -->
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook20PiruNoodle</defName>
+		<label>cook piru noodle in bulk (20)</label>
+		<description>Cooks twenty sweet noodles made from Piru frond flour, a staple of Avali students.</description>
+		<jobString>Cooking twenty piru noodle.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawKiriFruits</li>
+					</thingDefs>
+				</filter>
+				<count>60</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawPiruFlour</li>
+					</thingDefs>
+				</filter>
+				<count>60</count>
+			</li>
+		</ingredients>
+		<products>
+			<AvaliPiruNoodle>20</AvaliPiruNoodle>
+		</products>
+		<researchPrerequisite>AvaliPlants</researchPrerequisite>
+		<skillRequirements>
+			<Cooking>7</Cooking>
+		</skillRequirements>
+		<workAmount>5400</workAmount>
+	</RecipeDef>
+	
+	
+	
+	<!-- CookStackAvaliKiriCurry -->
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook20KiriCurry</defName>
+		<label>cook kiri curry in bulk (20)</label>
+		<description>Cooks twenty spicy meat noodles with a rich Kiri sauce.</description>
+		<jobString>Cooking twenty kiri curry.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AvaliPiruNoodle</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AvaliSpicyJerky</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawKiriFruits</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<AvaliKiriCurry>20</AvaliKiriCurry>
+		</products>
+		<researchPrerequisite>AvaliPlants</researchPrerequisite>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+		<workAmount>3000</workAmount>
+	</RecipeDef>
+	
+	<!-- CookStackAvaliTaco -->
+	<RecipeDef ParentName="CookMealBase">
+		<defName>Cook20AvaliTaco</defName>
+		<label>cook Avalon-style tacos in bulk (20)</label>
+		<description>Cooks twenty super-hot Nakati-spiced tacos; sometimes eaten on a dare by non-Avali.</description>
+		<jobString>Cooking twenty Avalon-style taco.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AvaliSpicyJerky</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawPiruFlour</li>
+					</thingDefs>
+				</filter>
+				<count>120</count>
+			</li>
+		</ingredients>
+		<products>
+			<AvaliTaco>20</AvaliTaco>
+		</products>
+		<researchPrerequisite>AvaliPlants</researchPrerequisite>
+		<skillRequirements>
+			<Cooking>9</Cooking>
+		</skillRequirements>
+		<workAmount>8400</workAmount>
+	</RecipeDef>
+</Defs>

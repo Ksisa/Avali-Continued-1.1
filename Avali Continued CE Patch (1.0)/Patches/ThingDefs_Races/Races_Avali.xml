@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>*/AlienRace.ThingDef_AlienRace[defName="Avali"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</value>
+	</Operation>
+
+<Operation Class="PatchOperationAdd">
+			<xpath>*/AlienRace.ThingDef_AlienRace[defName = "Avali"]/statBases</xpath>
+			<value>
+			<CarryBulk>37.5</CarryBulk> <!-- 15/0.4=37.5 -->
+			<AimingAccuracy>1.4</AimingAccuracy>
+			<MeleeCritChance>1.5</MeleeCritChance>
+			<MeleeParryChance>1</MeleeParryChance>
+			<ReloadSpeed>1</ReloadSpeed>
+			<Suppressability>0.8</Suppressability>
+			</value>
+	</Operation>
+
+<Operation Class="PatchOperationReplace">
+		<xpath>*/AlienRace.ThingDef_AlienRace[defName="Avali"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left hand talons</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>1.5</cooldownTime>
+					<linkedBodyPartsGroup>LeftHandTalons</linkedBodyPartsGroup>
+					<armorPenetration>0.1</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right hand talons</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>6</power>
+					<cooldownTime>1.5</cooldownTime>
+					<linkedBodyPartsGroup>RightHandTalons</linkedBodyPartsGroup>
+					<armorPenetration>0.1</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>left feet talons</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>3</cooldownTime>
+					<linkedBodyPartsGroup>LeftFeetTalons</linkedBodyPartsGroup>
+					<armorPenetration>0.15</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right feet talons</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>3</cooldownTime>
+					<linkedBodyPartsGroup>RightFeetTalons</linkedBodyPartsGroup>
+					<armorPenetration>0.15</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>left fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>3</power>
+					<cooldownTime>1.5</cooldownTime>
+					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+					<armorPenetration>0.06</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>3</power>
+					<cooldownTime>1.5</cooldownTime>
+					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+					<armorPenetration>0.06</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>left feet</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>4</power>
+					<cooldownTime>3</cooldownTime>
+					<linkedBodyPartsGroup>LeftFeetAvali</linkedBodyPartsGroup>
+					<armorPenetration>0.08</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right feet</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>4</power>
+					<cooldownTime>3</cooldownTime>
+					<linkedBodyPartsGroup>RightFeetAvali</linkedBodyPartsGroup>
+					<armorPenetration>0.08</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>Bite</label>
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>9</power>
+					<cooldownTime>2</cooldownTime>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+					<armorPenetration>0.09</armorPenetration>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/AlienRace.ThingDef_AlienRace[defName="Avali"]/comps</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/AlienRace.ThingDef_AlienRace[defName="Avali"]</xpath>
+				<value>
+					<comps />
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/AlienRace.ThingDef_AlienRace[defName="Avali"]/comps</xpath>
+		<value>
+			<li>
+			  <compClass>CombatExtended.CompPawnGizmo</compClass>
+			</li>
+			<li Class="CombatExtended.CompProperties_Suppressable" />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[@Name="AvaliPawnBase"]</xpath>
+		<value>
+			<comps>
+			<li Class="CombatExtended.CompProperties_Inventory" />
+			</comps>
+		</value>
+	</Operation>
+<!--
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[@Name="AvaliPawnBase"]/inspectorTabs</xpath>
+    <value>
+      <li>CombatExtended.ITab_Inventory</li>
+    </value>
+  </Operation>
+-->
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/AlienRace.ThingDef_AlienRace[defName="Avali"]/statBases/ShootingAccuracyPawn</xpath>
+	</Operation>
+</Patch>
+

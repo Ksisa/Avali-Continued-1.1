@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Rocket Turret -->
+    <Operation Class="PatchOperationReplace">
+      <xpath>*/ThingDef[defName="AvaliTurretLarge"]/comps</xpath>
+      <value>
+        <comps>
+        <!-- How hard it explodes on death-->
+          <li Class="CompProperties_Explosive">
+            <explosiveRadius>5.9</explosiveRadius>
+            <explosiveDamageType>Bomb</explosiveDamageType>
+            <chanceToStartFire>0.25</chanceToStartFire>
+            <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+          </li>
+          <li Class="CompProperties_Forbiddable"/>
+          <!-- How much Power it eats-->
+          <li Class="CompProperties_Power">
+            <compClass>CompPowerTrader</compClass>
+            <basePowerConsumption>250</basePowerConsumption>
+          </li>
+          <li Class="CompProperties_Flickable"/>
+          <li Class="CompProperties_Breakdownable"/>
+        </comps>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="AvaliTurretLarge"]/thingClass</xpath>
+        <value>
+        <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+      <xpath>*/ThingDef[defName="AvaliTurretLarge"]/building</xpath>
+      <value>
+        <building>
+		    <ai_combatDangerous>true</ai_combatDangerous>
+        <turretGunDef>Gun_AvaliTurretLarge</turretGunDef>
+        <turretTopGraphicPath>Things/Building/Security/AvaliTurretLarge/AvaliTurretLarge_Top</turretTopGraphicPath>
+        <turretTopDrawSize>3</turretTopDrawSize>
+        <turretTopOffset>(0, 0)</turretTopOffset>
+        </building>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+      <xpath>*/ThingDef[defName="Gun_AvaliTurretLarge"]/statBases</xpath>
+      <value>
+        <statBases>
+        <Mass>100</Mass>
+        <SightsEfficiency>1</SightsEfficiency>
+        <SwayFactor>2</SwayFactor>
+        <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+        <ShotSpread>2</ShotSpread>
+        <Flammability>0</Flammability>
+        <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+      <xpath>*/ThingDef[defName="Gun_AvaliTurretLarge"]/verbs</xpath>
+      <value>
+      <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Avali_Rocket</defaultProjectile>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <ai_AvoidFriendlyFireRadius>7</ai_AvoidFriendlyFireRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <minRange>9.9</minRange>
+        <range>59.9</range>
+        <soundCast>Shot_Avali_RocketLauncher</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>18</muzzleFlashScale>
+        <recoilPattern>Mounted</recoilPattern>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+      </li>
+    </verbs>
+      </value>
+    </Operation>
+
+        <Operation Class="PatchOperationAdd">
+      <xpath>*/ThingDef[defName="Gun_AvaliTurretLarge"]</xpath>
+      <value>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>20</magazineSize>
+                <reloadTime>20</reloadTime>
+                <spawnUnloaded>false</spawnUnloaded>
+                <ammoSet>AmmoSet_AvaliRocket</ammoSet>
+            </li>
+              <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+                <noSnapshot>true</noSnapshot>
+              </li>
+        </comps>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+      <xpath>*/ThingDef[defName="AvaliTurretLarge"]/costList</xpath>
+        <value>
+        <costList>
+      <Plasteel>200</Plasteel>
+      <ComponentIndustrial>20</ComponentIndustrial>
+      <ComponentSpacer>10</ComponentSpacer>
+      </costList>
+        </value>
+    </Operation>
+
+<!-- Sniper Turret-->
+
+    <Operation Class="PatchOperationReplace">
+      <xpath>*/ThingDef[defName="AvaliTurretSmall"]/comps</xpath>
+      <value>
+        <comps>
+          <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceToStartFire>0.25</chanceToStartFire>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+          </li>
+          <li Class="CompProperties_Forbiddable"/>
+          <li Class="CompProperties_Power">
+            <compClass>CompPowerTrader</compClass>
+            <basePowerConsumption>200</basePowerConsumption>
+          </li>
+          <li Class="CompProperties_Flickable"/>
+          <li Class="CompProperties_Breakdownable"/>
+        </comps>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="AvaliTurretSmall"]/fillPercent</xpath>
+        <value>
+        <fillPercent>0.75</fillPercent>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="AvaliTurretSmall"]/thingClass</xpath>
+        <value>
+        <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>*/ThingDef[defName="AvaliTurretSmall"]/building</xpath>
+      <value>
+        <building>
+		    <ai_combatDangerous>true</ai_combatDangerous>
+        <turretGunDef>Gun_AvaliTurretSmall</turretGunDef>
+        <turretTopGraphicPath>Things/Building/Security/AvaliTurretSmall/AvaliTurretSmall_Top</turretTopGraphicPath>
+        <turretTopDrawSize>2</turretTopDrawSize>
+        <turretTopOffset>(0, 0)</turretTopOffset>
+        </building>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>*/ThingDef[defName="Gun_AvaliTurretSmall"]/statBases</xpath>
+      <value>
+        <statBases>
+        <Mass>5</Mass>
+        <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+        <SightsEfficiency>1.0</SightsEfficiency>
+        <ShotSpread>0.1</ShotSpread>
+        <SwayFactor>0.7</SwayFactor>
+        <Flammability>0</Flammability>
+        <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>*/ThingDef[defName="Gun_AvaliTurretSmall"]/verbs</xpath>
+      <value>
+      <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Avali_Sniper</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <range>89.9</range>
+        <soundCast>Shot_Avali_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <recoilPattern>Mounted</recoilPattern>
+      </li>
+    </verbs>
+      </value>
+    </Operation>
+        <Operation Class="PatchOperationAdd">
+      <xpath>*/ThingDef[defName="Gun_AvaliTurretSmall"]</xpath>
+      <value>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>20</magazineSize>
+                <reloadTime>10</reloadTime>
+                <spawnUnloaded>false</spawnUnloaded>
+                <ammoSet>AmmoSet_AvaliSniper</ammoSet>
+            </li>
+              <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+              </li>
+        </comps>
+      </value>
+    </Operation>
+
+<!-- Minigun turret-->
+    <Operation Class="PatchOperationReplace">
+      <xpath>*/ThingDef[defName="AvaliTurretMedium"]/comps</xpath>
+      <value>
+        <comps>
+          <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceToStartFire>0.25</chanceToStartFire>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+          </li>
+          <li Class="CompProperties_Forbiddable"/>
+          <li Class="CompProperties_Power">
+            <compClass>CompPowerTrader</compClass>
+            <basePowerConsumption>300</basePowerConsumption>
+          </li>
+          <li Class="CompProperties_Flickable"/>
+          <li Class="CompProperties_Breakdownable"/>
+        </comps>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="AvaliTurretMedium"]/fillPercent</xpath>
+        <value>
+        <fillPercent>0.75</fillPercent>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="AvaliTurretMedium"]/thingClass</xpath>
+        <value>
+        <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>*/ThingDef[defName="AvaliTurretMedium"]/building</xpath>
+      <value>
+    <building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>Gun_AvaliTurretMedium</turretGunDef>
+      <turretTopGraphicPath>Things/Building/Security/AvaliTurretMedium/AvaliTurretMedium_Top</turretTopGraphicPath>
+      <turretTopDrawSize>2.25</turretTopDrawSize>
+      <turretTopOffset>(0, 0)</turretTopOffset>
+    </building>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>*/ThingDef[defName="Gun_AvaliTurretMedium"]/statBases</xpath>
+      <value>
+        <statBases>
+        <Mass>50</Mass>
+        <SightsEfficiency>1</SightsEfficiency>
+        <SwayFactor>0.3</SwayFactor>
+        <RangedWeapon_Cooldown>0.01</RangedWeapon_Cooldown>
+        <ShotSpread>2.5</ShotSpread>
+        <Flammability>0</Flammability>
+        <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+      <xpath>*/ThingDef[defName="Gun_AvaliTurretMedium"]/verbs</xpath>
+      <value>
+      <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Avali_Minigun</defaultProjectile>
+        <warmupTime>0.03</warmupTime>
+        <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <range>49.9</range>
+        <soundCast>Shot_Avali_Minigun</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>7</muzzleFlashScale>
+        <recoilPattern>Mounted</recoilPattern>
+      </li>
+    </verbs>
+      </value>
+    </Operation>
+        <Operation Class="PatchOperationAdd">
+      <xpath>*/ThingDef[defName="Gun_AvaliTurretMedium"]</xpath>
+      <value>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>400</magazineSize>
+                <reloadTime>15</reloadTime>
+                <spawnUnloaded>false</spawnUnloaded>
+                <ammoSet>AmmoSet_AvaliMinigun</ammoSet>
+            </li>
+              <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>SuppressFire</aiAimMode>
+              </li>
+        </comps>
+      </value>
+    </Operation>
+
+<!-- Why did he include values in the descriptions? T_T  -->
+<Operation Class="PatchOperationSequence">
+<operations>
+  <li Class="PatchOperationReplace">
+    <xpath>*/ThingDef[defName="Gun_AvaliTurretSmall"]/description</xpath>
+    <value>
+      <description>Cerberus turret uses electromagnetic force to launch high-velocity projectiles accelerated along a pair of conductive rails. Frequently used as quick deployable long-range point defence both effective against infantry and vehicles. Not effective at short range. Because of the very high currents flowing through rails they must be refurbished after use. Automatically fires at nearby enemies. May explode and cause fire when damaged.</description>
+    </value>
+  </li>
+  <li Class="PatchOperationReplace">
+    <xpath>*/ThingDef[defName="Gun_AvaliTurretMedium"]/description</xpath>
+    <value>
+      <description>A "big brother" of Hailstorm hybrid minigun - the Ripper turret will launch more projectiles with greater rate because it has constant power supply so it does not have to make pauses to charge the supercapacitors. Terrifyingly effective against unarmored targets, but it's rails must be refurbished after use beacuse of the very high currents flowing through them. Automatically fires at nearby enemies. May explode and cause fire when damaged.</description>
+    </value>
+  </li>
+  <li Class="PatchOperationReplace">
+    <xpath>*/ThingDef[defName="Gun_AvaliTurretLarge"]/description</xpath>
+    <value>
+      <description>Despite the main Thrasher purpose being fighting against armored vehicles and mechanoids it's still pretty effective against infantry. Automatically fires at nearby enemies. Requires new rockets to be loaded after use. May explode and cause fires when damaged.</description>
+    </value>
+  </li>
+</operations>
+</Operation>
+</Patch>

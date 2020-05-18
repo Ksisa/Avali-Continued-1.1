@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>AmmoAvaliPistol</defName>
+      <label>Avali Pistol charge</label>
+      <parent>AmmoAdvanced</parent>
+      <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+    </ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_AvaliPistol</defName>
+    <label>Avali Pistol charge</label>
+    <ammoTypes>
+      <Ammo_AvaliPistol>Bullet_AvaliPistol</Ammo_AvaliPistol>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" Name="AvaliPistolBase" ParentName="AmmoBase" Abstract="True">
+    <description>Avali Pistol ammo</description>
+    <smallVolume>true</smallVolume>
+    <statBases>
+	  <Mass>0.01</Mass>
+	  <Bulk>0.02</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting</li>
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoAvaliPistol</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="AvaliPistolBase">
+    <defName>Ammo_AvaliPistol</defName>
+    <label>Avali Pistol cartridge</label>
+    <graphicData>
+      <texPath>Things/Ammo/Charged/Regular</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.2</MarketValue>
+    </statBases>
+    <ammoClass>Charged</ammoClass>
+  </ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" Name="BaseAvaliPistol" ParentName="BaseBullet" Abstract="true">
+    <graphicData>
+      <texPath>Things/Items/Weapons/Bullet_Avali</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bullet</damageDef>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseAvaliPistol">
+    <defName>Bullet_AvaliPistol</defName>
+    <label>Avali Pistol shot</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationBase>0.4</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+	
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_AvaliPistol</defName>
+    <label>make Avali Pistol cartridge x200</label>
+    <description>Craft 200 Avali Pistol cartridges.</description>
+    <jobString>Making Avali Pistol cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_AvaliPistol>200</Ammo_AvaliPistol>
+    </products>
+	<researchPrerequisite>AvaliRailguns</researchPrerequisite>
+  </RecipeDef>
+	
+</Defs>

@@ -1,0 +1,23 @@
+F:\RimWorld modding\RimWorld\Mods\Test\Assemblies\Avali.dll
+F:\RimWorld modding\RimWorld\Mods\Test\Source\Test\obj\Debug\Avali.csprojResolveAssemblyReference.cache
+F:\RimWorld modding\RimWorld\Mods\Test\Source\Test\obj\Debug\Avali.dll
+E:\RimWorld modding\RimWorld\Mods\Test\Assemblies\Avali.dll
+E:\RimWorld modding\RimWorld\Mods\Test\Source\Test\obj\Debug\Avali.csprojResolveAssemblyReference.cache
+E:\RimWorld modding\RimWorld\Mods\Test\Source\Test\obj\Debug\Avali.dll
+D:\Steam\SteamApps\common\RimWorld\Mods\Test\Assemblies\Avali.dll
+G:\RimWorld modding\RimWorld\Mods\Test\Source\Test\obj\Debug\Avali.csprojResolveAssemblyReference.cache
+G:\RimWorld modding\RimWorld\Mods\Test\Source\Test\obj\Debug\Avali.dll
+G:\RimWorld modding\RimWorld\Mods\Avali\Assemblies\Avali.dll
+D:\Steam\SteamApps\common\RimWorld\Mods\Avali\Assemblies\Avali.dll
+D:\Steam\SteamApps\common\RimWorld\Mods\Test\Source\Test\obj\Debug\Avali.dll
+D:\Steam\SteamApps\common\RimWorld\Mods\Test\Source\Test\obj\Debug\Avali.csprojResolveAssemblyReference.cache
+D:\Games\RimWorld\Mods\Avali\Assemblies\Avali.dll
+D:\Games\RimWorld\Mods\Test\Source\Test\obj\Debug\Avali.dll
+D:\Games\RimWorld\Mods\Test\Source\Test\obj\Debug\Avali.csprojResolveAssemblyReference.cache
+D:\Steam\SteamApps\common\RimWorld\Source\Mods\Avali\Assemblies\Avali.dll
+D:\Steam\SteamApps\common\RimWorld\Source\Avali\Source\Test\obj\Debug\Avali.csprojResolveAssemblyReference.cache
+D:\Steam\SteamApps\common\RimWorld\Source\Avali\Source\Test\obj\Debug\Avali.dll
+D:\Steam\SteamApps\common\RimWorld\Source\Avali\Mods\Avali\Assemblies\Avali.dll
+D:\Steam\SteamApps\common\RimWorld\Source\Avali\Source\obj\Debug\Avali.csprojResolveAssemblyReference.cache
+D:\Steam\SteamApps\common\RimWorld\Source\Avali\Source\obj\Debug\Avali.dll
+D:\Steam\SteamApps\common\RimWorld\Mods\Avali\1.1\Assemblies\Avali.dll

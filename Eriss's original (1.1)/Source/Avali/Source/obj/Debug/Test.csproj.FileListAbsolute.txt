@@ -1,0 +1,6 @@
+D:\Steam\SteamApps\common\RimWorld\Mods\AvaliRemastered\Source\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\Steam\SteamApps\common\RimWorld\Mods\AvaliRemastered\Assemblies\Test.dll
+D:\Steam\SteamApps\common\RimWorld\Mods\AvaliRemastered\Source\Test\obj\Debug\Test.dll
+D:\Steam\SteamApps\common\RimWorld\Mods\Test\Assemblies\Test.dll
+D:\Steam\SteamApps\common\RimWorld\Mods\Test\Source\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\Steam\SteamApps\common\RimWorld\Mods\Test\Source\Test\obj\Debug\Test.dll

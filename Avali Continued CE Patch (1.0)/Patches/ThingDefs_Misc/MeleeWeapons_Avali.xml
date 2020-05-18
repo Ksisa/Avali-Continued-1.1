@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="Avali_Pila"]/stuffCategories</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Pila"]</xpath>
+		<value>
+			<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			</comps>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Pila"]</xpath>
+		<value>
+			<inspectorTabs Inherit="False"></inspectorTabs>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="Avali_Pila"]/costStuffCount</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Pila"]/costList</xpath>
+		<value>
+		<Steel>30</Steel>
+		</value>
+	</Operation>
+ 	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Pila"]/graphicData</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Ammo/Advanced/Avali_Pila</texPath>
+				<graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+		</value>
+	</Operation>
+  
+
+ 	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Pila"]</xpath>
+		<value>
+			<stackLimit>25</stackLimit>
+		</value>
+	</Operation>
+  
+ 	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Pila"]/statBases</xpath>
+		<value>
+			<statBases>
+				<SightsEfficiency>0.65</SightsEfficiency>
+				<ShotSpread>1.2</ShotSpread>
+				<SwayFactor>1.5</SwayFactor>
+				<Bulk>1</Bulk>
+				<Mass>0.60</Mass>
+				<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+			</statBases>
+		</value>
+	</Operation>
+  
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Pila"]/verbs</xpath>
+		<value>
+			<verbs>
+				<li Class="CombatExtended.VerbPropertiesCE">
+					<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>APilum_Thrown</defaultProjectile>
+					<warmupTime>4</warmupTime>
+					<range>30</range>
+				</li>
+			</verbs>
+		</value>
+	</Operation>
+  
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Pila"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>shaft</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>12</power>
+					<cooldownTime>1.6</cooldownTime>
+					<armorPenetration>0.15</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>15</power>
+					<cooldownTime>1.6</cooldownTime>
+					<armorPenetration>0.30</armorPenetration>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Dagger"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>handle</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>1</cooldownTime>
+					<armorPenetration>0.15</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>blade</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>10</power>
+					<cooldownTime>1</cooldownTime>
+					<armorPenetration>0.4</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>15</power>
+					<cooldownTime>1</cooldownTime>
+					<armorPenetration>0.30</armorPenetration>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Dagger"]/statBases</xpath>
+		<value>
+      		<Bulk>2</Bulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Dagger"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.4</MeleeCritChance>
+				<MeleeParryChance>0.02</MeleeParryChance>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<!-- Add tags -->
+
+	<Operation Class="PatchOperationSequence">
+  	<success>Always</success>
+  	<operations>
+    	<li Class="PatchOperationTest">
+      	<xpath>*/ThingDef[defName="Avali_Dagger"]/weaponTags</xpath>
+      	<success>Invert</success>
+    	</li>
+    	<li Class="PatchOperationAdd">
+      	<xpath>*/ThingDef[defName="Avali_Dagger"]</xpath>
+      	<value>
+        	<weaponTags />
+      	</value>
+    	</li>
+  	</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Dagger"]/weaponTags</xpath>
+		<value>
+			<li>AvaliMeleeCivilian</li>	  
+		</value>
+	</Operation>
+
+	<!-- ========== Mace ========== -->
+
+	<!-- Patch stats -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Sword"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>handle</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetration>0.18</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>edge</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>25</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetration>0.65</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>20</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetration>0.5</armorPenetration>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Sword"]/statBases</xpath>
+		<value>
+      		<Bulk>3</Bulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Sword"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.3</MeleeCritChance>
+				<MeleeParryChance>0.12</MeleeParryChance>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<!-- Add tags -->
+
+	<Operation Class="PatchOperationSequence">
+  	<success>Always</success>
+  	<operations>
+    	<li Class="PatchOperationTest">
+      	<xpath>*/ThingDef[defName="Avali_Sword"]/weaponTags</xpath>
+      	<success>Invert</success>
+    	</li>
+    	<li Class="PatchOperationAdd">
+      	<xpath>*/ThingDef[defName="Avali_Sword"]</xpath>
+      	<value>
+        	<weaponTags />
+      	</value>
+    	</li>
+  	</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Sword"]/weaponTags</xpath>
+		<value>
+			<li>AvaliMeleeCivilian</li>	  
+		</value>
+	</Operation>
+  
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_LongSword"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>handle</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>2.5</cooldownTime>
+					<armorPenetration>0.2</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>edge</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>35</power>
+					<cooldownTime>2.5</cooldownTime>
+					<armorPenetration>1.0</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>25</power>
+					<cooldownTime>2.5</cooldownTime>
+					<armorPenetration>0.65</armorPenetration>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_LongSword"]/statBases</xpath>
+		<value>
+      		<Bulk>4.5</Bulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_LongSword"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.25</MeleeCritChance>
+				<MeleeParryChance>0.19</MeleeParryChance>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<!-- Add tags -->
+
+	<Operation Class="PatchOperationSequence">
+  	<success>Always</success>
+  	<operations>
+    	<li Class="PatchOperationTest">
+      	<xpath>*/ThingDef[defName="Avali_LongSword"]/weaponTags</xpath>
+      	<success>Invert</success>
+    	</li>
+    	<li Class="PatchOperationAdd">
+      	<xpath>*/ThingDef[defName="Avali_LongSword"]</xpath>
+      	<value>
+        	<weaponTags />
+      	</value>
+    	</li>
+  	</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_LongSword"]/weaponTags</xpath>
+		<value>
+			<li>AvaliMeleeMilitary</li>	  
+		</value>
+	</Operation>
+  
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Spear"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>shaft</label>
+					<capacities>
+						<li>Blunt</li>
+						<li>Poke</li>
+					</capacities>
+					<power>30</power>
+					<cooldownTime>3</cooldownTime>
+					<armorPenetration>0.45</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>45</power>
+					<cooldownTime>3</cooldownTime>
+					<armorPenetration>0.75</armorPenetration>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Spear"]/statBases</xpath>
+		<value>
+      		<Bulk>3.5</Bulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Spear"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.25</MeleeCritChance>
+				<MeleeParryChance>0.16</MeleeParryChance>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<!-- Add tags -->
+
+	<Operation Class="PatchOperationSequence">
+  	<success>Always</success>
+  	<operations>
+    	<li Class="PatchOperationTest">
+      	<xpath>*/ThingDef[defName="Avali_Spear"]/weaponTags</xpath>
+      	<success>Invert</success>
+    	</li>
+    	<li Class="PatchOperationAdd">
+      	<xpath>*/ThingDef[defName="Avali_Spear"]</xpath>
+      	<value>
+        	<weaponTags />
+      	</value>
+    	</li>
+  	</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Spear"]/weaponTags</xpath>
+		<value>
+			<li>AvaliMeleeCivilian</li>	  
+		</value>
+	</Operation>
+  
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Hammer"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>handle</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>15</power>
+					<cooldownTime>2.0</cooldownTime>
+					<armorPenetration>0.4</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<labelUsedInLogging>false</labelUsedInLogging>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>25</power>
+					<cooldownTime>2.0</cooldownTime>
+					<armorPenetration>0.85</armorPenetration>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Hammer"]/statBases</xpath>
+		<value>
+      		<Bulk>4.5</Bulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Hammer"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.6</MeleeCritChance>
+				<MeleeParryChance>0.12</MeleeParryChance>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<!-- Add tags -->
+
+	<Operation Class="PatchOperationSequence">
+  	<success>Always</success>
+  	<operations>
+    	<li Class="PatchOperationTest">
+      	<xpath>*/ThingDef[defName="Avali_Hammer"]/weaponTags</xpath>
+      	<success>Invert</success>
+    	</li>
+    	<li Class="PatchOperationAdd">
+      	<xpath>*/ThingDef[defName="Avali_Hammer"]</xpath>
+      	<value>
+        	<weaponTags />
+      	</value>
+    	</li>
+  	</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="Avali_Hammer"]/weaponTags</xpath>
+		<value>
+			<li>AvaliMeleeMilitary</li>	  
+		</value>
+	</Operation>
+  
+</Patch>

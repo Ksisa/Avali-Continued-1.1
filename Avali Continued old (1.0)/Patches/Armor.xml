@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Apparel_PowerArmor"]/statBases</xpath>
+		  <value>
+        <ArmorRating_Enviromental>0.8</ArmorRating_Enviromental>
+	  </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Apparel_PowerArmorHelmet"]/statBases</xpath>
+		  <value>
+        <ArmorRating_Enviromental>0.4</ArmorRating_Enviromental>
+	  </value>
+  </Operation>
+</Patch>

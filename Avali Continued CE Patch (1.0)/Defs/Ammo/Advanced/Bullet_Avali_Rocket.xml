@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>AmmoAvaliRocket</defName>
+      <label>Avali Rocket</label>
+      <parent>AmmoRockets</parent>
+      <iconPath>UI/Icons/ThingCategories/CaliberRocket</iconPath>
+    </ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_AvaliRocket</defName>
+    <label>Avali Rocket</label>
+	<ammoTypes>
+	  <Ammo_AvaliRocket>Bullet_AvaliRocket</Ammo_AvaliRocket>
+	</ammoTypes>
+  </CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" Name="AvaliRocketBase" ParentName="AmmoBase" Abstract="True">
+    <description>Rocket-assisted projectile for use with the Avali Rocket launcher.</description>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting_TableMachining</li>
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoAvaliRocket</li>
+    </thingCategories>
+    <stackLimit>25</stackLimit>
+    <cookOffFlashScale>40</cookOffFlashScale>
+    <cookOffSound>MortarBomb_Explode</cookOffSound>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="AvaliRocketBase">
+    <defName>Ammo_AvaliRocket</defName>
+    <label>Avali Rocket (HEAT)</label>
+    <graphicData>
+      <texPath>Things/Items/Resource/AvaliRocket</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>33.76</MarketValue>
+      <Mass>2</Mass>
+      <Bulk>3</Bulk>
+    </statBases>
+	<ammoClass>RocketHEAT</ammoClass>
+    <comps>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <explosionDamage>100</explosionDamage>
+        <explosionDamageDef>Bomb</explosionDamageDef>
+        <explosionRadius>4.9</explosionRadius>
+        <soundExplode>MortarBomb_Explode</soundExplode>
+      </li>
+    </comps>
+  </ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseAvaliRocket" ParentName="BaseBullet" Abstract="true">
+		<graphicData>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>50</speed>
+			<soundAmbient>RocketPropelledLoop_Small</soundAmbient>
+		</projectile>
+	</ThingDef>	
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseAvaliRocket">
+		<defName>Bullet_AvaliRocket</defName>
+		<label>Avali Rocket (HEAT)</label>
+		<graphicData>
+			<texPath>Things/Items/Weapons/Rocket_Avali</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>100</damageAmountBase>
+			<armorPenetrationBase>3.0</armorPenetrationBase>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<explosionDamage>100</explosionDamage>
+				<explosionDamageDef>Bomb</explosionDamageDef>
+				<explosionRadius>4.9</explosionRadius>
+				<soundExplode>MortarBomb_Explode</soundExplode>
+			</li>
+		</comps>
+	</ThingDef>
+  
+	<!-- ==================== Recipes ========================== -->
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_AvaliRocket</defName>
+    <label>make Avali Rocket x5</label>
+    <description>Craft 5 Avali Rockets.</description>
+    <jobString>Making Avali Rockets.</jobString>
+    <workAmount>15000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>22</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>FSX</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_AvaliRocket>5</Ammo_AvaliRocket>
+    </products>
+  </RecipeDef>
+	
+</Defs>

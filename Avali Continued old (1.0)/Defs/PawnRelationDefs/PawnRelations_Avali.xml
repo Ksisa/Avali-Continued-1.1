@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <PawnRelationDef>
+    <defName>Packmate</defName>
+    <label>packmate</label>
+    <importance>100</importance>
+    <diedThought>PackmateDied</diedThought>
+    <killedThought>KilledMyPackmate</killedThought>
+    <soldThought>SoldMyPackmate</soldThought>
+    <opinionOffset>30</opinionOffset>
+    <implied>false</implied>
+    <reflexive>false</reflexive> <!-- true - for both pawns, false - only for current pawn-->
+  </PawnRelationDef>
+
+  <PawnRelationDef>
+    <defName>PackLeader</defName>
+    <label>pack leader</label>
+    <importance>100</importance>
+    <diedThought>PackmateDied</diedThought>
+    <killedThought>KilledMyPackmate</killedThought>
+    <soldThought>SoldMyPackmate</soldThought>
+    <opinionOffset>30</opinionOffset>
+    <implied>false</implied>
+    <reflexive>false</reflexive>
+  </PawnRelationDef>
+  
+  <PawnRelationDef>
+    <defName>Caretaker</defName>
+    <label>caretaker</label>
+    <importance>150</importance>
+    <diedThought>CaretakerDied</diedThought>
+    <killedThought>KilledMyCaretaker</killedThought>
+    <soldThought>SoldMyCaretaker</soldThought>
+    <opinionOffset>30</opinionOffset>
+    <implied>false</implied>
+    <reflexive>false</reflexive>
+  </PawnRelationDef>
+  
+  <PawnRelationDef>
+    <defName>TakingCareOf</defName>
+    <label>taking care of {1}</label>
+    <importance>150</importance>
+    <diedThought>CaretakerKitDied</diedThought>
+    <killedThought>KilledCaretakerKit</killedThought>
+    <soldThought>SoldCaretakerKit</soldThought>
+    <opinionOffset>30</opinionOffset>
+    <implied>false</implied>
+    <reflexive>false</reflexive>
+  </PawnRelationDef>
+</Defs>

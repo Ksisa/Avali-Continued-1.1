@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <PawnCantShootWeapon>1 colonist can't shoot from equiped weapon</PawnCantShootWeapon>
+  <PawnsCantShootWeapons>{0} colonists can't shoot from equiped weapons</PawnsCantShootWeapons>
+  <PawnsCantShootWeaponsDesc>These colonists can't shoot from equiped weapons:\n\n{0}\nReason: Insufficient rights.</PawnsCantShootWeaponsDesc>
+  
+  <WormholePlatformNoPower>Wormhole platform is out of energy</WormholePlatformNoPower>
+  <WormholePlatformNoPowerDesc>Wormhole platform not have enought power and starts recive damage from singularity.</WormholePlatformNoPowerDesc>
+  <WormholePlatformHeavyDamaged>Wormhole platform is heavy damaged</WormholePlatformHeavyDamaged>
+  <WormholePlatformHeavyDamagedDesc>Wormhole platform is heavy damaged. If not quickly repair it singularity will get out of control.</WormholePlatformHeavyDamagedDesc>
+  <SingularityOutOfControl>Singularity out of control</SingularityOutOfControl>
+  <SingularityOutOfControlDesc>Singularity destroyed it's platform and get out of control. It will unperdictibly fly and destroying everything on it's path before not lost all it's power and dissapear.</SingularityOutOfControlDesc>
+</LanguageData>

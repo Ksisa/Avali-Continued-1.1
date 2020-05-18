@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ===== Hatched Pawns Stories ===== -->
+
+  <AlienRace.BackstoryDef>
+    <defName>AvaliMaleRimworldChild</defName>
+    <title>Rimworld kit</title>
+    <titleShort>Rimworld</titleShort>
+    <baseDescription>[PAWN_nameDef] was hatched in one of the colonies on this rimworld. All [PAWN_possessive] childhood [PAWN_pronoun] helped other colonists to survive on this hostile place.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <shuffleable>false</shuffleable>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <forcedHediffs>
+    </forcedHediffs>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>AvaliMaleRimworldAdult</defName>
+    <title>Rimworld colonist</title>
+    <titleShort>Rimworld</titleShort>
+    <baseDescription>After [PAWN_nameDef] grew up [PAWN_pronoun] became a full member of the colony.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <shuffleable>false</shuffleable>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+
+
+  <!-- ===== Child Stories ===== -->
+   
+  <!-- AvaliMaleAvaliIlluminateChild -->
+  <ThingDef Name="AvaliMaleAvaliIlluminateChild" Abstract="True">
+    <title>Illuminate child</title>
+    <titleShort>Illuminate</titleShort>
+    <baseDescription>[PAWN_nameDef] was hatched in one of the training facilities devoted to producing the intelligent Illuminate Elite. [PAWN_possessive] formative years were occupied with many of the usual mundane types of education, but augmented with courses on observation and management.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleAvaliIlluminateChild">
+    <defName>AvaliMaleAvaliIlluminateChild</defName>
+  </AlienRace.BackstoryDef>
+
+  <!-- AvaliMaleWarTornSurvivor -->
+  <ThingDef Name="AvaliMaleWarTornSurvivor" Abstract="True">
+    <title>War-torn survivor</title>
+    <titleShort>War survivor</titleShort>
+    <baseDescription>[PAWN_nameDef] was hatched on a war-torn world where food was rare and other Avali had to fight for food. [PAWN_pronoun] never talks much and tries to avoid others in conversion because of the past life [PAWN_pronoun] tried to leave behind.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>-10</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <!-- <workDisables>
+      <li>Caring</li>
+    </workDisables> -->
+    <forcedHediffs>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleWarTornSurvivor">
+    <defName>AvaliMaleWarTornSurvivor</defName>
+  </AlienRace.BackstoryDef>
+
+  <!-- AvaliMaleGeneticallyEditedWarrior -->
+  <ThingDef Name="AvaliMaleGeneticallyEditedWarrior" Abstract="True">
+    <title>Genetically edited</title>
+    <titleShort>Genetically edited</titleShort>
+    <baseDescription>Before being hatched [PAWN_nameDef] was genetically edited to be a warrior. [PAWN_pronoun] was perfect for almost any combat scenario, being able to take on any foe at an early age. But [PAWN_pronoun] lacked social graces and [PAWN_possessive] education in many areas was brief.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>12</amount>
+        </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+      <li>ManualSkilled</li>
+      <li>Intellectual</li>
+      <li>Caring</li>
+    </workDisables>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleGeneticallyEditedWarrior">
+    <defName>AvaliMaleGeneticallyEditedWarrior</defName>
+  </AlienRace.BackstoryDef>
+   
+   <!-- AvaliMaleGeneticallyEditedSocial -->
+  <ThingDef Name="AvaliMaleGeneticallyEditedSocial" Abstract="True">
+    <title>Genetically edited</title>
+    <titleShort>Genetically edited</titleShort>
+    <baseDescription>Before being hatched [PAWN_nameDef] was genetically edited to be very social. [PAWN_pronoun] began speaking at a much younger age then most Avali hatchlings and at the age of four, [PAWN_pronoun] was quickly gaining the ability to persuade others and learn their likes and dislikes. With time it became obvious [PAWN_pronoun] refused to do harm to others and found [PAWN_possessive]self hating dumb and unskilled labour.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>12</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>-8</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>-6</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+      <li>ManualDumb</li>
+      <li>Violent</li>
+    </workDisables>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleGeneticallyEditedSocial">
+    <defName>AvaliMaleGeneticallyEditedSocial</defName>
+  </AlienRace.BackstoryDef>
+   
+  <!-- AvaliMaleLostEgg -->
+  <ThingDef Name="AvaliMaleLostEgg" Abstract="True">
+    <title>Lost egg</title>
+    <titleShort>Lost egg</titleShort>
+    <baseDescription>When [PAWN_nameDef] hatched, it wasn't in one of the communal hatcheries that were devoted to caring for Avali eggs. It was in a dark, back room of an abandoned home. Too young and scared to venture out into the community, [PAWN_pronoun] spent most of [PAWN_possessive] youth alone and caring for [PAWN_possessive]self.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+      <li>AvaliMaleBackstoryT</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>-10</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <!-- <workDisables>
+      <li>Caring</li>
+    </workDisables> -->
+    <forcedHediffs>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleLostEgg">
+    <defName>AvaliMaleLostEgg</defName>
+  </AlienRace.BackstoryDef>
+
+  <!-- Reject -->
+  <ThingDef Name="AvaliMaleRejected" Abstract="True">
+    <title>Abandoned egg</title>
+    <titleShort>Abandoned egg</titleShort>
+    <baseDescription>When [PAWN_nameDef] hatched, it wasn't clear where [PAWN_pronoun] was. Being lost and alone, it became obvious [PAWN_pronoun] was rejected or abandoned. Through pure luck however, [PAWN_pronoun] was able to survive the horrors of being alone, training [PAWN_possessive]self the skills of a natural predator.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+      <li>AvaliMaleBackstoryT</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>-10</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <!-- <workDisables>
+      <li>Caring</li>
+    </workDisables> -->
+    <forcedHediffs>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleRejected">
+      <defName>AvaliMaleRejected</defName>
+  </AlienRace.BackstoryDef>
+   
+  <!-- CoreChild -->
+  <ThingDef Name="AvaliMaleCoreChild" Abstract="True">
+      <title>Illuminate core child</title>
+      <titleShort>Core Child</titleShort>
+      <baseDescription>[PAWN_nameDef] was hatched on one of the core planets in the Illuminate. [PAWN_pronoun] grew up in one of the many arcologies, spending much of [PAWN_possessive] time in arboretums.</baseDescription>
+      <slot>Childhood</slot>
+      <bodyTypeGlobal>Thin</bodyTypeGlobal>
+      <maleCommonality>100</maleCommonality>
+      <femaleCommonality>100</femaleCommonality>
+      <spawnCategories>
+        <li>AvaliBackstory</li>
+      </spawnCategories>
+      <skillGains>
+        <li>
+          <defName>Social</defName>
+          <amount>4</amount>
+        </li>
+        <li>
+          <defName>Plants</defName>
+          <amount>2</amount>
+        </li>
+        <li>
+          <defName>Crafting</defName>
+          <amount>2</amount>
+        </li>
+      </skillGains>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleCoreChild">
+    <defName>AvaliMaleCoreChild</defName>
+  </AlienRace.BackstoryDef>
+
+  <!-- AvaliMaleSpaceNomad -->
+  <ThingDef Name="AvaliMaleSpaceNomad" Abstract="True">
+    <title>Space nomad</title>
+    <titleShort>Space nomad</titleShort>
+    <baseDescription>When [PAWN_nameDef] was hatched, [PAWN_pronoun] was part of a tribe of nomads in space. [PAWN_pronoun] quickly learned the ways of Avali crafts and soon started helping in construction and production of Avali gear and helped tend to the gardens of the ship.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleSpaceNomad">
+    <defName>AvaliMaleSpaceNomad</defName>
+  </AlienRace.BackstoryDef>
+   
+  <!-- AvaliMaleArtchild -->
+  <ThingDef Name="AvaliMaleArtchild" Abstract="True">
+    <title>Artist child</title>
+    <titleShort>Artist-Child</titleShort>
+    <baseDescription>[PAWN_nameDef] was always doodling, sculpting or singing, and [PAWN_possessive] talent quickly flowered into a great natural ability for art, winning many prizes for [PAWN_possessive] works.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleArtchild">
+    <defName>AvaliMaleArtchild</defName>
+  </AlienRace.BackstoryDef>
+   
+  <!-- AvaliMaleArchitect -->
+  <ThingDef Name="AvaliMaleArchitect" Abstract="True">
+    <title>Architect</title>
+    <titleShort>Architect</titleShort>
+    <baseDescription>In the Avali Illuminate, those with a natural talent for building and architecture are put into a special school with training programs established to produce fine architects. [PAWN_nameDef] spent [PAWN_possessive] childhood learning about various building materials, architecture, and the societies that employed them.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleArchitect">
+    <defName>AvaliMaleArchitect</defName>
+  </AlienRace.BackstoryDef>
+   
+  <!-- AvaliMaleIndependentYouth -->
+  <ThingDef Name="AvaliMaleIndependentYouth" Abstract="True">
+    <title>Independent youth</title>
+    <titleShort>Independent</titleShort>
+    <baseDescription>[PAWN_nameDef] spent his youth on one of the many independent worlds, learning early how to survive off the land.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+      <li>AvaliMaleBackstoryT</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-3</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleIndependentYouth">
+    <defName>AvaliMaleIndependentYouth</defName>
+  </AlienRace.BackstoryDef>
+
+  <!-- AvaliMaleEngineerApprentice -->
+  <ThingDef Name="AvaliMaleEngineerApprentice" Abstract="True">
+    <title>Mechanical apprentice</title>
+    <titleShort>apprentice</titleShort>
+    <baseDescription>[PAWN_nameDef] was a technical apprentice working on all manner of machines. [PAWN_possessive] skills had developed even at a young age.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>-8</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>-8</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleEngineerApprentice">
+    <defName>AvaliMaleEngineerApprentice</defName>
+  </AlienRace.BackstoryDef>
+   
+  <!-- AvaliMaleCadet -->
+  <ThingDef Name="AvaliMaleCadet" Abstract="True">
+    <title>Military cadet</title>
+    <titleShort>Cadet</titleShort>
+    <baseDescription>[PAWN_nameDef] was enrolled in the military at a young age. [PAWN_pronoun] learned how to defend [PAWN_objective]self and [PAWN_possessive] pack from hostiles.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleCadet">
+    <defName>AvaliMaleCadet</defName>
+  </AlienRace.BackstoryDef>
+   
+  <!-- AvaliMaleAnimalLover -->
+  <ThingDef Name="AvaliMaleAnimalLover" Abstract="True">
+    <title>Animal lover</title>
+    <titleShort>Animal-lover</titleShort>
+    <baseDescription>[PAWN_nameDef] didn't have any advanced drones where [PAWN_pronoun] grew up; so [PAWN_pronoun] made friends with any wild animal [PAWN_pronoun] could find, even bringing several home to [PAWN_possessive] pack's dismay.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+      <li>AvaliMaleBackstoryT</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleAnimalLover">
+    <defName>AvaliMaleAnimalLover</defName>
+  </AlienRace.BackstoryDef>
+
+  <!-- AvaliMaleApprenticeNurse -->
+  <ThingDef Name="AvaliMaleApprenticeNurse" Abstract="True">
+    <title>Apprentice nurse</title>
+    <titleShort>Nurse</titleShort>
+    <baseDescription>[PAWN_nameDef] was enrolled in one of the hospitals run by the Illuminate. [PAWN_pronoun] was trained in the care of others and develop a good bedside manner.</baseDescription>
+    <slot>Childhood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleApprenticeNurse">
+    <defName>AvaliMaleApprenticeNurse</defName>
+  </AlienRace.BackstoryDef>
+   
+   
+   
+  <!-- ===== Adult Stories ===== -->
+   
+  <!-- AvaliMaleArmorer -->
+  <ThingDef Name="AvaliMaleArmorer" Abstract="True">
+    <title>Quartermaster</title>
+    <titleShort>Quartermaster</titleShort>
+    <baseDescription>[PAWN_nameDef] is interested in guns and firearms of all kinds. [PAWN_possessive] interest led [PAWN_objective] to the military, where [PAWN_pronoun] was put in charge of the Armory; maintaining all the weapons and various equipment alongside the Gunsmiths.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleArmorer">
+      <defName>AvaliMaleArmorer</defName>
+  </AlienRace.BackstoryDef>
+
+  <!-- AvaliMaleMilitia -->
+  <ThingDef Name="AvaliMaleMilitia" Abstract="True">
+    <title>Avali militia</title>
+    <titleShort>Militia</titleShort>
+    <baseDescription>[PAWN_nameDef] was enlisted to join the Avali militia which resulted in back breaking training and hardship from [PAWN_possessive] superiors. But the training paid off, which resulted in [PAWN_possessive] learning a few new tricks.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <spawnCategories>
+        <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleMilitia">
+    <defName>AvaliMaleMilitia</defName>
+  </AlienRace.BackstoryDef>
+
+  <!-- AvaliMaleMilitiaCaptain -->
+  <ThingDef Name="AvaliMaleMilitiaCaptain" Abstract="True">
+    <title>Avali militia captain</title>
+    <titleShort>Militia captain</titleShort>
+    <baseDescription>[PAWN_nameDef] was promoted to captain for [PAWN_possessive] leadership after fighting in an Illuminate skirmish which resulted in a total victory thanks to [PAWN_possessive] quick thinking on the move.</baseDescription>
+    <slot>Adulthood</slot>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>50</maleCommonality>
+    <femaleCommonality>50</femaleCommonality>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleMilitiaCaptain">
+    <defName>AvaliMaleMilitiaCaptain</defName>
+  </AlienRace.BackstoryDef>
+
+  <!-- AvaliMaleDoctor -->
+  <ThingDef Name="AvaliMaleDoctor" Abstract="True">
+    <title>Doctor</title>
+    <titleShort>Doctor</titleShort>
+    <baseDescription>[PAWN_nameDef] graduated with a doctorate degree in medical science and quickly became a well respected doctor in the hospital [PAWN_pronoun] used to work in.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleDoctor">
+    <defName>AvaliMaleDoctor</defName>
+  </AlienRace.BackstoryDef>
+   
+  <!-- AvaliMaleSurvivor -->
+  <ThingDef Name="AvaliMaleSurvivor" Abstract="True">
+    <title>Shipwreck survivor</title>
+    <titleShort>Survivor</titleShort>
+    <baseDescription>[PAWN_nameDef] was shipwrecked once before, losing [PAWN_possessive] entire pack. After months of fending for [PAWN_possessive]self, [PAWN_objective] was finally rescued. [PAWN_pronoun] still caries the scars of that event to this day.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-6</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+      <li>Caring</li>
+    </workDisables>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleSurvivor">
+    <defName>AvaliMaleSurvivor</defName>
+  </AlienRace.BackstoryDef>
+
+  <!-- AvaliMaleEggSnatcher -->
+  <ThingDef Name="AvaliMaleEggSnatcher" Abstract="True">
+    <title>Egg snatcher</title>
+    <titleShort>Snatcher</titleShort>
+    <baseDescription>[PAWN_nameDef] was once very poor until a stranger asked [PAWN_objective] if [PAWN_pronoun] could steal an Avali egg. Without a second thought [PAWN_nameDef] agreed and soon made a living from it, stealing dozens of Avali eggs from tribes around the system and soon becoming infamous for it.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+      <li>AvaliMaleBackstoryT</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-6</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+      <li>Caring</li>
+    </workDisables>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleEggSnatcher">
+    <defName>AvaliMaleEggSnatcher</defName>
+  </AlienRace.BackstoryDef>
+
+  <!-- AvaliMaleChef -->
+  <ThingDef Name="AvaliMaleChef" Abstract="True">
+    <title>Chef</title>
+    <titleShort>Chef</titleShort>
+    <baseDescription>[PAWN_nameDef] is an amazing cook. [PAWN_pronoun] can turn handful of ingredients into a delicious meal. But don't ask [PAWN_objective] to get [PAWN_possessive] hands dirty, because [PAWN_pronoun] won't like it.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+      <li>AvaliMaleBackstoryT</li>
+    </spawnCategories>
+    <skillGains>
+        <li>
+          <defName>Cooking</defName>
+          <amount>9</amount>
+        </li>
+        <li>
+          <defName>Plants</defName>
+          <amount>9</amount>
+        </li>
+        <li>
+          <defName>Artistic</defName>
+          <amount>6</amount>
+        </li>
+        <!-- <li>
+          <defName>Mining</defName>
+          <amount>-4</amount>
+        </li>
+        <li>
+          <defName>Animals</defName>
+          <amount>-4</amount>
+        </li> -->
+        <li>
+          <defName>Construction</defName>
+          <amount>-8</amount>
+        </li>
+    </skillGains>
+    <workDisables>
+      <li>Mining</li>
+      <li>Animals</li>
+    </workDisables>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleChef">
+    <defName>AvaliMaleChef</defName>
+  </AlienRace.BackstoryDef>
+
+  <!-- AvaliMaleEliteGuard -->
+  <!-- MAKE RARE -->
+  <ThingDef Name="AvaliMaleEliteGuard" Abstract="True">
+    <title>Elite llluminate guard</title>
+    <titleShort>Elite guard</titleShort>
+    <baseDescription>[PAWN_nameDef] is an elite soldier and was trained to be a hardened and cold blooded killer. [PAWN_pronoun] was is in charge of defending high ranking officials among the Illuminate and would kill anyone if they got too close without a second thought. [PAWN_pronoun] was however taught to never speak unless spoken to and stands as a cold blooded raptor around others. [PAWN_pronoun] also can't do skilled labor due to the fact [PAWN_pronoun] was trained in combat for most of [PAWN_possessive] life.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>10</maleCommonality>
+    <femaleCommonality>10</femaleCommonality>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>16</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>10</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+      <li>ManualSkilled</li>
+      <li>Artistic</li>
+      <li>Caring</li>
+      <li>Animals</li>
+    </workDisables>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleEliteGuard">
+    <defName>AvaliMaleEliteGuard</defName>
+  </AlienRace.BackstoryDef>
+
+  <!-- AvaliMaleFelon -->
+  <ThingDef Name="AvaliMaleFelon" Abstract="True">
+    <title>Former felon</title>
+    <titleShort>Felon</titleShort>
+    <baseDescription>[PAWN_nameDef] made some bad choices in [PAWN_possessive] life, even spending time incarcerated. [PAWN_pronoun] doesn't talk much about [PAWN_possessive] time on the inside, but [PAWN_objective] appear to have turned over a new leaf.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+      <li>AvaliMaleBackstoryT</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-9</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-6</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+      <li>Caring</li>
+    </workDisables>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleFelon">
+    <defName>AvaliMaleFelon</defName>
+  </AlienRace.BackstoryDef>
+   
+  <!-- AvaliMaleAssassin -->
+  <!-- MAKE RARE -->
+  <ThingDef Name="AvaliMaleAssassin" Abstract="True">
+    <title>Assassin</title>
+    <titleShort>Assassin</titleShort>
+    <baseDescription>[PAWN_nameDef] is a professional Illuminate assassin. [PAWN_pronoun] has been trained to fight as a second nature. This did prevent [PAWN_objective] from developing many other skills.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>10</maleCommonality>
+    <femaleCommonality>10</femaleCommonality>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>9</amount>
+      </li>
+      <!-- <li>
+        <defName>Cooking</defName>
+        <amount>-10</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>-10</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>-10</amount>
+      </li> -->
+    </skillGains>
+    <workDisables>
+      <li>Artistic</li>
+      <li>PlantWork</li>
+      <li>Cooking</li>
+    </workDisables>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleAssassin">
+    <defName>AvaliMaleAssassin</defName>
+  </AlienRace.BackstoryDef>
+   
+  <!-- AvaliMaleToymaker -->
+  <ThingDef Name="AvaliMaleToymaker" Abstract="True">
+    <title>Toymaker</title>
+    <titleShort>Toymaker</titleShort>
+    <baseDescription>[PAWN_nameDef] found [PAWN_pronoun] had a natural talent for making delicate items such as small gears, and inscribing beautiful designs. [PAWN_pronoun] also loved to bring smiles to the faces of hatchlings. [PAWN_pronoun] then naturally became a fine toymaker.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+      <li>AvaliMaleBackstoryT</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-6</amount>
+      </li>
+    </skillGains>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleToymaker">
+    <defName>AvaliMaleToymaker</defName>
+  </AlienRace.BackstoryDef>
+   
+  <!-- AvaliMaleMiner -->
+  <ThingDef Name="AvaliMaleMiner" Abstract="True">
+    <title>Miner</title>
+    <titleShort>Miner</titleShort>
+    <baseDescription>[PAWN_nameDef] could find an ore vein just by tapping on the stone and listing to the response. [PAWN_pronoun] is one of the finest miners the Independent Worlds has ever seen. Just don't ask [PAWN_objective] to cook a meal, unless you like the taste of dirt.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Mining</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <!-- <li>
+        <defName>Cooking</defName>
+        <amount>-10</amount>
+      </li> -->
+    </skillGains>
+    <workDisables>
+      <li>Cooking</li>
+    </workDisables>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleMiner">
+    <defName>AvaliMaleMiner</defName>
+  </AlienRace.BackstoryDef>
+   
+  <!-- AvaliMaleScientist -->
+  <ThingDef Name="AvaliMaleScientist" Abstract="True">
+    <title>Scientist</title>
+    <titleShort>Scientist</titleShort>
+    <baseDescription>[PAWN_nameDef] has dedicated [PAWN_possessive] life to the search for knowledge. From Astrology to Zoology, [PAWN_pronoun] has seen it all. </baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>100</maleCommonality>
+    <femaleCommonality>100</femaleCommonality>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+        <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>6</amount>
+      </li>
+      <!-- <li>
+        <defName>Mining</defName>
+        <amount>-10</amount>
+      </li> -->
+      <li>
+        <defName>Shooting</defName>
+        <amount>-5</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-5</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+      <li>Mining</li>
+    </workDisables>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleScientist">
+    <defName>AvaliMaleScientist</defName>
+  </AlienRace.BackstoryDef>
+   
+  <!-- AvaliMaleStarbound -->
+  <ThingDef Name="AvaliMaleStarbound" Abstract="True">
+    <title>Space adventurer</title>
+    <titleShort>Space adventurer</titleShort>
+    <baseDescription>[PAWN_nameDef] is space adventurer. [PAWN_pronoun] has visited many planets, and met many species. [PAWN_pronoun] is well versed in many different trades.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <maleCommonality>10</maleCommonality>
+    <femaleCommonality>10</femaleCommonality>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AvaliBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+      <li>GuardianNanites</li>
+    </forcedHediffs>
+  </ThingDef>
+   
+  <AlienRace.BackstoryDef ParentName="AvaliMaleStarbound">
+    <defName>AvaliMaleStarbound</defName>
+  </AlienRace.BackstoryDef>
+
+</Defs>

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{66F8C1F6-B067-48A7-9349-558F97BBBCA1}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Avali</RootNamespace>
+    <AssemblyName>Avali</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Anon\AppData\Roaming\ICSharpCode\SharpDevelop5\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>..\..\..\Mods\Avali\1.1\Assemblies\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>..\..\..\Mods\Avali\1.1\Assemblies\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Program</StartAction>
+    <StartProgram>D:\Steam\SteamApps\common\RimWorld\RimWorldWin64.exe</StartProgram>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\workshop\content\294100\839005762\1.1\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AlienRace">
+      <HintPath>..\..\..\..\..\workshop\content\294100\839005762\1.1\Assemblies\AlienRace.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alert_CantShootWeapon.cs" />
+    <Compile Include="CompCanBePutOn.cs" />
+    <Compile Include="JobDriver_FindBedForLovinAvali.cs" />
+    <Compile Include="JobDriver_FindPartnerForLovinAvali.cs" />
+    <Compile Include="JobDriver_LovinAvali.cs" />
+    <Compile Include="JobDriver_PutOn.cs" />
+    <Compile Include="JobGiver_GotoForLovinAvaliGroup.cs" />
+    <Compile Include="Building_TentDoor.cs" />
+    <Compile Include="CompProperties_WeaponAvali.cs" />
+    <Compile Include="Verb_ShootBinded.cs" />
+    <None Include="CompProperties_WormholePlatform.cs" />
+    <Compile Include="CompSunGlower.cs" />
+    <None Include="CompWormholePlatform.cs" />
+    <Compile Include="ITab_Avali_Pack.cs" />
+    <Compile Include="JobDriver_HackBindedThing.cs" />
+    <Compile Include="JobGiver_TryToTakeDownedOrDeadPawn.cs" />
+    <Compile Include="PlaceWorker_AvaliWindow.cs" />
+    <Compile Include="PlaceWorker_UnderNotThickRoofOnly.cs" />
+    <Compile Include="PlaceWorker_WormholePod.cs" />
+    <Compile Include="ThoughtWorker_AvaliSmell.cs" />
+    <Compile Include="HarmonyPatches.cs" />
+    <Compile Include="AvaliUtility.cs" />
+    <Compile Include="Building_TurretGunAvali.cs" />
+    <Compile Include="CompRangedWeaponAvali.cs" />
+    <Compile Include="CompHoloTV.cs" />
+    <Compile Include="CompProperties_UseBuilding.cs" />
+    <Compile Include="CompUseBuilding.cs" />
+    <None Include="CompHatcherAvali.cs" />
+    <None Include="CompProperties_HatcherAvali.cs" />
+    <Compile Include="CompProperties_TextThing.cs" />
+    <Compile Include="CompTextThing.cs" />
+    <Compile Include="HediffGiver_AddHediff.cs" />
+    <Compile Include="Hediff_AvaliBiology.cs" />
+    <Compile Include="Hediff_AvaliCaresOfEgg.cs" />
+    <Compile Include="Hediff_AvaliAgeTracker.cs" />
+    <Compile Include="ITab_Translation.cs" />
+    <Compile Include="IngestionOutcomeDoer_GiveHediffRaceDependant.cs" />
+    <Compile Include="JobDriver_CheckAvaliEgg.cs" />
+    <Compile Include="JobDriver_SingsAlone.cs" />
+    <Compile Include="JobDriver_SingKaraoke.cs" />
+    <Compile Include="JobDriver_SingsSocial.cs" />
+    <Compile Include="JobDriver_TranslateText.cs" />
+    <Compile Include="JoyGiver_SingKaraoke.cs" />
+    <Compile Include="MentalState_AvaliPreparesToGo.cs" />
+    <Compile Include="MentalState_RaceDependant.cs" />
+    <Compile Include="MentalState_ReturnsToPackmates.cs" />
+    <Compile Include="MentalState_WanderInSilence.cs" />
+    <Compile Include="PlaceWorker_NearTallBuildingOnly.cs" />
+    <Compile Include="Thoughts_Avali.cs" />
+    <Compile Include="ThoughtWorker_AvaliDeaf.cs" />
+    <Compile Include="ThoughtWorker_AvaliWantToSleepWithLovedOne.cs" />
+    <None Include="Main.cs" />
+    <Compile Include="JobDriver_UseRunningTrack.cs" />
+    <Compile Include="JoyGiver_InPrivateRoomAvali.cs" />
+    <Compile Include="JoyGiver_InteractBuildingStanding.cs" />
+    <Compile Include="JoyGiver_SocialRelaxAvali.cs" />
+    <Compile Include="PawnRelationDefOf.cs" />
+    <None Include="Settings.cs" />
+    <Compile Include="ShieldBeltAvali.cs" />
+    <Compile Include="ThingDefOf.cs" />
+    <None Include="PawnAvali.cs" />
+    <Compile Include="RecipeWorkerAvaliEgg.cs" />
+    <Compile Include="ThoughtDefOf.cs" />
+    <None Include="TaleDefOf.cs" />
+    <Compile Include="CompRunningGenerator.cs" />
+    <Compile Include="HediffDefOf.cs" />
+    <Compile Include="Hediff_AvaliHasEgg.cs" />
+    <Compile Include="JobDefOf.cs" />
+    <Compile Include="JobDriver_GotoForLovinAvali.cs" />
+    <None Include="JobDriver_LayAvaliEgg.cs" />
+    <Compile Include="JobDriver_LovinAvaliSingle.cs" />
+    <Compile Include="JobGiver_GotoForLovinAvali.cs" />
+    <Compile Include="JobDriver_GotoLayAvaliEgg.cs" />
+    <Compile Include="PlaceWorker_UnderRoofOnly.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

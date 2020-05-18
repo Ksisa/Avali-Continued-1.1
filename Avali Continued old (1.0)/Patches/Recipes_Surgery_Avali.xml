@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!-- EPOE and RBSE -->
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef["SurgeryBionic"]/recipeUsers</xpath>
+		<value>
+		  <li>Avali</li>
+	  </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef["SurgeryAdvanced"]/recipeUsers</xpath>
+		<value>
+		  <li>Avali</li>
+	  </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef["SurgerySynthetic"]/recipeUsers</xpath>
+		<value>
+		  <li>Avali</li>
+	  </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef["SurgerySimple"]/recipeUsers</xpath>
+		<value>
+		  <li>Avali</li>
+	  </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef["SurgeryNatural"]/recipeUsers</xpath>
+		<value>
+		  <li>Avali</li>
+	  </value>
+  </Operation>
+  
+  <!-- RBSE -->
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef["SurgeryBone"]/recipeUsers</xpath>
+		<value>
+		  <li>Avali</li>
+	  </value>
+  </Operation>
+  
+  <!-- EPOE -->
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef["SurgeryBasic"]/recipeUsers</xpath>
+		<value>
+		  <li>Avali</li>
+	  </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef["SurgeryGlitterworld"]/recipeUsers</xpath>
+		<value>
+		  <li>Avali</li>
+	  </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef["SurgeryMending"]/recipeUsers</xpath>
+		<value>
+		  <li>Avali</li>
+	  </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef["SurgerySurrogate"]/recipeUsers</xpath>
+		<value>
+		  <li>Avali</li>
+	  </value>
+  </Operation>
+</Patch>

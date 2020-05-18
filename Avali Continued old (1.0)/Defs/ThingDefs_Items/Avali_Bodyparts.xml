@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<ThingDef Name="AvaliBodyPartArtificialBase" Abstract="True" ParentName="BodyPartArtificialBase">
+  <techLevel>Ultra</techLevel>
+	<recipeMaker>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+    <recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <skillRequirements>
+      <Crafting>9</Crafting>
+		</skillRequirements>
+    <researchPrerequisite>AvaliAugments</researchPrerequisite>
+	</recipeMaker>
+	<inspectorTabs>
+		<li>ITab_Art</li>
+	</inspectorTabs>
+</ThingDef>
+
+<!-- CyberneticAvaliTail -->
+<ThingDef ParentName="AvaliBodyPartArtificialBase">
+	<defName>CyberneticAvaliTail</defName>
+	<label>cybernetic Avali tail</label>
+	<description>A technical marvel! Intricate gyroscopic feedback systems allow increased movement and dexterity! Amazing! Such Wow!</description>
+	<graphicData>
+		<texPath>Things/Items/Health/HealthItemAvaliArtificial</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+  <costList>
+		<Plasteel>45</Plasteel>
+		<ComponentIndustrial>15</ComponentIndustrial>
+	</costList>
+	<statBases>
+    <WorkToMake>15000</WorkToMake>
+		<MarketValue>1500</MarketValue>
+		<Mass>7</Mass>
+	</statBases>
+  <recipeMaker>
+    <researchPrerequisite>AvaliCybernetics</researchPrerequisite>
+  </recipeMaker>
+	<techHediffsTags>
+		<li>Advanced</li>
+	</techHediffsTags>
+</ThingDef>
+
+<!-- CyberneticAvaliBody -->
+<ThingDef ParentName="AvaliBodyPartArtificialBase">
+	<defName>CyberneticAvaliBody</defName>
+	<label>cybernetic Avali body</label>
+	<description>Replaces fragile Avali body with a new one, made of plasteel and stuffed with most advanced electronics. Because flesh is weak.</description>
+	<graphicData>
+		<texPath>Things/Items/Health/HealthItemAvaliArtificial</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+  <costList>
+		<Plasteel>300</Plasteel>
+		<ComponentIndustrial>30</ComponentIndustrial>
+    <ComponentSpacer>10</ComponentSpacer>
+    <Uranium>10</Uranium>
+	</costList>
+	<statBases>
+    <WorkToMake>300000</WorkToMake>
+		<MarketValue>8000</MarketValue>
+		<Mass>10</Mass>
+	</statBases>
+  <recipeMaker>
+    <researchPrerequisite>AvaliCyberneticsAdvanced</researchPrerequisite>
+  </recipeMaker>
+	<techHediffsTags>
+		<li>Advanced</li>
+	</techHediffsTags>
+</ThingDef>
+
+<!-- CyberneticAvaliHead -->
+<ThingDef ParentName="AvaliBodyPartArtificialBase">
+	<defName>CyberneticAvaliHead</defName>
+	<label>cybernetic Avali head</label>
+	<description>Places Avali brains in a new head made of plasteel and stuffed with most advanced electronics. Also makes them mental illness called Pack Loss.</description>
+	<graphicData>
+		<texPath>Things/Items/Health/HealthItemAvaliArtificial</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+  <costList>
+		<Plasteel>200</Plasteel>
+		<ComponentIndustrial>20</ComponentIndustrial>
+    <ComponentSpacer>10</ComponentSpacer>
+	</costList>
+	<statBases>
+    <WorkToMake>200000</WorkToMake>
+		<MarketValue>6000</MarketValue>
+		<Mass>7</Mass>
+	</statBases>
+  <recipeMaker>
+    <researchPrerequisite>AvaliCyberneticsAdvanced</researchPrerequisite>
+  </recipeMaker>
+	<techHediffsTags>
+		<li>Advanced</li>
+	</techHediffsTags>
+</ThingDef>
+
+<!-- CyberneticAvaliLeg -->
+<ThingDef ParentName="AvaliBodyPartArtificialBase">
+	<defName>CyberneticAvaliLeg</defName>
+	<label>cybernetic Avali leg</label>
+	<description>With this legs Avali can run faster and jump highter then ever before.</description>
+	<graphicData>
+		<texPath>Things/Items/Health/HealthItemAvaliArtificial</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+  <costList>
+		<Plasteel>80</Plasteel>
+		<ComponentIndustrial>6</ComponentIndustrial>
+	</costList>
+	<statBases>
+    <WorkToMake>50000</WorkToMake>
+		<MarketValue>1500</MarketValue>
+		<Mass>7</Mass>
+	</statBases>
+  <recipeMaker>
+    <researchPrerequisite>AvaliCybernetics</researchPrerequisite>
+  </recipeMaker>
+	<techHediffsTags>
+		<li>Advanced</li>
+	</techHediffsTags>
+</ThingDef>
+
+<!-- CyberneticAvaliArm -->
+<ThingDef ParentName="AvaliBodyPartArtificialBase">
+	<defName>CyberneticAvaliArm</defName>
+	<label>cybernetic Avali arm</label>
+	<description>Physically Avali is much more weaker then Humans. This body replacement will fix this.</description>
+	<graphicData>
+		<texPath>Things/Items/Health/HealthItemAvaliArtificial</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+  <costList>
+		<Plasteel>60</Plasteel>
+		<ComponentIndustrial>6</ComponentIndustrial>
+	</costList>
+	<statBases>
+    <WorkToMake>50000</WorkToMake>
+		<MarketValue>1500</MarketValue>
+		<Mass>4</Mass>
+	</statBases>
+  <recipeMaker>
+    <researchPrerequisite>AvaliCybernetics</researchPrerequisite>
+  </recipeMaker>
+	<techHediffsTags>
+		<li>Advanced</li>
+	</techHediffsTags>
+</ThingDef>
+
+<!-- Tail -->
+<ThingDef ParentName="BodyPartNaturalBase">
+	<defName>TailAvali</defName>
+	<label>Avali tail</label>
+	<description>A Avali tail.</description>
+	<graphicData>
+		<texPath>Things/Item/Health/HealthItemNatural</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+		<statBases>
+		<MarketValue>200</MarketValue>
+    <Mass>7</Mass>
+	</statBases>
+</ThingDef>
+
+<!-- ClothTail -->
+<ThingDef ParentName="BodyPartArtificialBase">
+	<defName>ClothAvaliTail</defName>
+	<label>cloth Avali tail</label>
+	<description>Simple prosthesis made to replace a missing tail. It's better than nothing...</description>
+	<graphicData>
+		<texPath>Things/Item/Health/HealthItemProsthetic</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>50</MarketValue>
+		<Mass>3</Mass>
+	</statBases>
+	<techHediffsTags>
+		<li>Simple</li>
+	</techHediffsTags>
+</ThingDef>
+
+<!-- ClothEar -->
+<ThingDef ParentName="BodyPartArtificialBase">
+	<defName>ClothAvaliEar</defName>
+	<label>cloth Avali ear</label>
+	<description>Simple prosthesis made to replace a missing ear. It's better than nothing...</description>
+	<graphicData>
+		<texPath>Things/Item/Health/HealthItemProsthetic</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>30</MarketValue>
+		<Mass>0.1</Mass>
+	</statBases>
+	<techHediffsTags>
+		<li>Simple</li>
+	</techHediffsTags>
+</ThingDef>
+</Defs>

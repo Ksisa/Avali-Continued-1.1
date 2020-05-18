@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- CyberneticAvaliTail -->
+<HediffDef ParentName="AddedBodyPartBase">
+	<defName>CyberneticAvaliTail</defName>
+	<label>cybernetic Avali tail</label>
+  <labelNoun>a cybernetic Avali tail</labelNoun>
+	<spawnThingOnRemoved>CyberneticAvaliTail</spawnThingOnRemoved>
+	<addedPartProps>
+		<solid>true</solid>
+		<partEfficiency>1.0</partEfficiency>
+	</addedPartProps>
+	<stages>
+		<li>
+			<capMods>
+				<li>
+					<capacity>Manipulation</capacity>
+					<offset>0.25</offset>
+				</li>
+				<li>
+					<capacity>Moving</capacity>
+					<offset>0.25</offset>
+				</li>
+			</capMods>
+		</li>
+	</stages>
+</HediffDef>
+
+<!-- CyberneticAvaliBody -->
+<HediffDef ParentName="ImplantHediffBase">
+	<defName>CyberneticAvaliBody</defName>
+	<label>cybernetic Avali torso</label>
+  <labelNoun>a cybernetic Avali torso</labelNoun>
+  <defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
+	<stages>
+		<li>
+        <painFactor>0.8</painFactor>
+			<capMods>
+				<li>
+					<capacity>Breathing</capacity>
+					<offset>0.5</offset>
+				</li>
+				<li>
+					<capacity>BloodFiltration</capacity>
+					<offset>0.5</offset>
+				</li>
+        <li>
+					<capacity>BloodPumping</capacity>
+					<offset>0.5</offset>
+				</li>
+        <li>
+					<capacity>Metabolism</capacity>
+					<offset>0.5</offset>
+				</li>
+			</capMods>
+      <statOffsets>
+        <ArmorRating_Enviromental>0.8</ArmorRating_Enviromental>
+        <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+        <ComfyTemperatureMax>30</ComfyTemperatureMax>
+        <MaxHitPoints>40</MaxHitPoints>
+      </statOffsets>
+      
+		</li>
+	</stages>
+</HediffDef>
+
+<!-- CyberneticAvaliHead -->
+<HediffDef ParentName="ImplantHediffBase">
+	<defName>CyberneticAvaliHead</defName>
+	<label>cybernetic Avali head</label>
+  <labelNoun>a cybernetic Avali head</labelNoun>
+  <defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
+  <comps>
+    <li Class="HediffCompProperties_VerbGiver">
+      <tools>
+        <li>
+          <label>teeth</label>
+          <capacities>
+            <li>Bite</li>
+          </capacities>
+          <power>20</power>
+          <cooldownTime>1.5</cooldownTime>
+        </li>
+      </tools>
+    </li>
+  </comps>
+	<stages>
+        
+		<li>
+    <painFactor>0.6</painFactor>
+      <capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>0.5</offset>
+				</li>
+        <li>
+					<capacity>Eating</capacity>
+					<offset>0.5</offset>
+				</li>
+			</capMods>
+      <statOffsets>
+        <PainShockThreshold>0.5</PainShockThreshold>
+        <ArmorRating_Enviromental>0.2</ArmorRating_Enviromental>
+        <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+        <ComfyTemperatureMax>20</ComfyTemperatureMax>
+        <MaxHitPoints>20</MaxHitPoints>
+      </statOffsets>
+		</li>
+	</stages>
+</HediffDef>
+
+<!-- CyberneticAvaliLeg -->
+<HediffDef ParentName="AddedBodyPartBase">
+	<defName>CyberneticAvaliLeg</defName>
+	<label>cybernetic Avali leg</label>
+  <labelNoun>a cybernetic Avali leg</labelNoun>
+  <comps>
+    <li Class="HediffCompProperties_VerbGiver">
+      <tools>
+        <li>
+          <label>leg</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>9</power>
+          <cooldownTime>3</cooldownTime>
+        </li>
+        <li>
+          <label>leg talons</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>12</power>
+          <cooldownTime>3</cooldownTime>
+        </li>
+      </tools>
+    </li>
+  </comps>
+	<spawnThingOnRemoved>CyberneticAvaliLeg</spawnThingOnRemoved>
+	<addedPartProps>
+		<solid>true</solid>
+		<partEfficiency>1.4</partEfficiency>
+	</addedPartProps>
+
+</HediffDef>
+
+<!-- CyberneticAvaliArm -->
+<HediffDef ParentName="AddedBodyPartBase">
+  <defName>CyberneticAvaliArm</defName>
+  <label>cybernetic Avali arm</label>
+  <labelNoun>a cybernetic Avali arm</labelNoun>
+  <comps>
+    <li Class="HediffCompProperties_VerbGiver">
+      <tools>
+        <li>
+          <label>fist</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>9</power>
+          <cooldownTime>1.5</cooldownTime>
+        </li>
+        <li>
+          <label>hand talons</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>12</power>
+          <cooldownTime>1.5</cooldownTime>
+        </li>
+      </tools>
+    </li>
+  </comps>
+  <spawnThingOnRemoved>CyberneticAvaliArm</spawnThingOnRemoved>
+  <addedPartProps>
+    <solid>true</solid>
+    <partEfficiency>1.4</partEfficiency>
+  </addedPartProps>
+</HediffDef>
+
+<!-- ClothTail -->
+<HediffDef ParentName="AddedBodyPartBase">
+	<defName>ClothAvaliTail</defName>
+	<label>cloth tail</label>
+  <labelNoun>a cloth tail</labelNoun>
+	<addedPartProps>
+		<solid>true</solid>
+		<partEfficiency>0.6</partEfficiency>
+    <betterThanNatural>false</betterThanNatural>
+	</addedPartProps>
+  <spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+</HediffDef>
+
+<!-- ClothEar -->
+<HediffDef ParentName="AddedBodyPartBase">
+	<defName>ClothAvaliEar</defName>
+	<label>cloth ear</label>
+  <labelNoun>a cloth ear</labelNoun>
+	<addedPartProps>
+		<solid>true</solid>
+		<partEfficiency>0.6</partEfficiency>
+    <betterThanNatural>false</betterThanNatural>
+	</addedPartProps>
+  <spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+</HediffDef>
+</Defs>

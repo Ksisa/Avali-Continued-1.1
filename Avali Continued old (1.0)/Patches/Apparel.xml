@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!-- ====================================== Core Various =========================================== -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Apparel_TribalA"]/recipeMaker/recipeUsers</xpath>
+    <value>
+      <li>AvaliNanoloom</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Apparel_Parka"]</xpath>
+    <value>
+      <recipeMaker>
+        <recipeUsers>
+          <li>AvaliNanoloom</li>
+        </recipeUsers>
+      </recipeMaker>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Apparel_Pants"]/recipeMaker</xpath>
+    <value>
+      <recipeUsers>
+        <li>AvaliNanoloom</li>
+      </recipeUsers>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Apparel_BasicShirt"]</xpath>
+    <value>
+      <recipeMaker>
+        <recipeUsers>
+          <li>AvaliNanoloom</li>
+        </recipeUsers>
+      </recipeMaker>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Apparel_CollarShirt"]/recipeMaker</xpath>
+    <value>
+      <recipeUsers>
+        <li>AvaliNanoloom</li>
+      </recipeUsers>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Apparel_Duster"]/recipeMaker</xpath>
+    <value>
+      <recipeUsers>
+        <li>AvaliNanoloom</li>
+      </recipeUsers>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Apparel_Jacket"]</xpath>
+    <value>
+      <recipeMaker>
+        <recipeUsers>
+          <li>AvaliNanoloom</li>
+        </recipeUsers>
+      </recipeMaker>
+    </value>
+  </Operation>
+  
+  <!-- ====================================== Core Hats =========================================== -->
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Apparel_CowboyHat"]/recipeMaker</xpath>
+    <value>
+      <recipeUsers>
+        <li>AvaliNanoloom</li>
+      </recipeUsers>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Apparel_BowlerHat"]</xpath>
+    <value>
+      <recipeMaker>
+        <recipeUsers>
+          <li>AvaliNanoloom</li>
+        </recipeUsers>
+      </recipeMaker>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Apparel_TribalHeaddress"]/recipeMaker/recipeUsers</xpath>
+    <value>
+      <li>AvaliNanoloom</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Apparel_Tuque"]</xpath>
+    <value>
+      <recipeMaker>
+        <recipeUsers>
+          <li>AvaliNanoloom</li>
+        </recipeUsers>
+      </recipeMaker>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Apparel_WarMask"]/recipeMaker/recipeUsers</xpath>
+    <value>
+      <li>AvaliNanoloom</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Apparel_WarVeil"]/recipeMaker/recipeUsers</xpath>
+    <value>
+      <li>AvaliNanoloom</li>
+    </value>
+  </Operation>
+</Patch>

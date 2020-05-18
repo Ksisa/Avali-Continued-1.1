@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+      <defName>Texts</defName>
+      <label>texts</label>
+      <parent>Items</parent>
+      <!-- <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>UI/Icons/ThingCategories/Foods</iconPath> -->
+    </ThingCategoryDef>
+</Defs>

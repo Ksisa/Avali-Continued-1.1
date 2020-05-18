@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Apparel_ScoutHUD"]/equippedStatOffsets</xpath>
+		<value>
+      <equippedStatOffsets>
+      <AimingAccuracy>0.05</AimingAccuracy>
+      <ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+      <AimingDelayFactor>-0.1</AimingDelayFactor>
+      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+      <GlobalLearningFactor>0.1</GlobalLearningFactor>
+    </equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Apparel_GuardianHelmet"]/statBases</xpath>
+		<value>
+      <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Mass>1</Mass>
+      <Bulk>2</Bulk>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.8</ArmorRating_Heat>
+      <ArmorRating_Enviromental>0.6</ArmorRating_Enviromental>
+      <Insulation_Cold>5</Insulation_Cold>
+      <Insulation_Heat>5</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+			</statBases>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Apparel_GuardianHelmet"]/equippedStatOffsets</xpath>
+		<value>
+      <equippedStatOffsets>
+      <AimingAccuracy>0.1</AimingAccuracy>
+      <SocialImpact>-0.5</SocialImpact>
+      <ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+      <AimingDelayFactor>-0.10</AimingDelayFactor>
+      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+      <PsychicSensitivity>-1</PsychicSensitivity>
+    </equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Apparel_CombatHelmet"]/statBases</xpath>
+		<value>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>0.75</Mass>
+      <Bulk>2</Bulk>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.4</ArmorRating_Heat>
+      <ArmorRating_Enviromental>0.4</ArmorRating_Enviromental>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>4</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+			</statBases>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Apparel_CombatHelmet"]/equippedStatOffsets</xpath>
+		<value>
+      <equippedStatOffsets>
+      <SocialImpact>-0.20</SocialImpact>
+      <AimingAccuracy>0.2</AimingAccuracy>
+      <ShootingAccuracyPawn>0.4</ShootingAccuracyPawn>
+      <AimingDelayFactor>-0.20</AimingDelayFactor>
+      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+      <PsychicSensitivity>-1</PsychicSensitivity>
+    </equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Apparel_HellcatHelmet"]/statBases</xpath>
+		<value>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <Bulk>2</Bulk>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.4</ArmorRating_Heat>
+      <ArmorRating_Enviromental>0.2</ArmorRating_Enviromental>
+      <Insulation_Cold>3</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+			</statBases>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Apparel_HellcatHelmet"]/equippedStatOffsets</xpath>
+		<value>
+      <equippedStatOffsets>
+      <SocialImpact>-0.1</SocialImpact>
+      <AimingAccuracy>0.3</AimingAccuracy>
+      <ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
+      <AimingDelayFactor>-0.3</AimingDelayFactor>
+      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+      <PsychicSensitivity>-1</PsychicSensitivity>
+      <GlobalLearningFactor>0.2</GlobalLearningFactor>
+    </equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Apparel_CombatHelmetElite"]/statBases</xpath>
+		<value>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <WorkToMake>20000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>0.75</Mass>
+      <Bulk>2</Bulk>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.4</ArmorRating_Heat>
+      <ArmorRating_Enviromental>0.4</ArmorRating_Enviromental>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>4</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+			</statBases>
+		</value>
+	</Operation>	
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Apparel_CombatHelmetElite"]/equippedStatOffsets</xpath>
+		<value>
+      <equippedStatOffsets>
+      <SocialImpact>-0.20</SocialImpact>
+      <AimingAccuracy>0.2</AimingAccuracy>
+      <ShootingAccuracyPawn>0.4</ShootingAccuracyPawn>
+      <AimingDelayFactor>-0.20</AimingDelayFactor>
+      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+      <PsychicSensitivity>-1</PsychicSensitivity>
+    </equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Apparel_HellcatHelmetElite"]/statBases</xpath>
+		<value>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <WorkToMake>15000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <Bulk>2</Bulk>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.4</ArmorRating_Heat>
+      <ArmorRating_Enviromental>0.2</ArmorRating_Enviromental>
+      <Insulation_Cold>3</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+			</statBases>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Avali_Apparel_HellcatHelmetElite"]/equippedStatOffsets</xpath>
+		<value>
+      <equippedStatOffsets>
+      <SocialImpact>-0.1</SocialImpact>
+      <AimingAccuracy>0.3</AimingAccuracy>
+      <ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
+      <AimingDelayFactor>-0.3</AimingDelayFactor>
+      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+      <PsychicSensitivity>-1</PsychicSensitivity>
+      <GlobalLearningFactor>0.2</GlobalLearningFactor>
+    </equippedStatOffsets>
+		</value>
+	</Operation>
+
+</Patch>

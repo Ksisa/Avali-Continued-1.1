@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Bionics Framework -->
+<Patch>
+		<Operation Class="PatchOperationFindMod">
+			<mods>
+				<li>Elite Bionics Framework</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/HediffDef[defName = "CyberneticAvaliArm"]/comps</xpath>
+						<value>
+							<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+								<linearAdjustment>14</linearAdjustment>
+							</li>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/HediffDef[defName = "CyberneticAvaliLeg"]/comps</xpath>
+						<value>
+							<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+								<linearAdjustment>12</linearAdjustment>
+							</li>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/HediffDef[defName = "CyberneticAvaliTail"]</xpath>
+						<value>
+							<comps>
+							<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+								<linearAdjustment>10</linearAdjustment>
+							</li>
+							</comps>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/HediffDef[defName = "CyberneticAvaliBody"]</xpath>
+						<value>
+						<comps>
+							<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+								<linearAdjustment>25</linearAdjustment>
+							</li>
+						</comps>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/HediffDef[defName = "CyberneticAvaliHead"]/comps</xpath>
+						<value>
+							<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+								<linearAdjustment>20</linearAdjustment>
+							</li>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/HediffDef[defName = "ClothAvaliTail"]</xpath>
+						<value>
+						<comps>
+							<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+								<linearAdjustment>-3</linearAdjustment>
+							</li>
+						</comps>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/HediffDef[defName = "ClothAvaliEar"]</xpath>
+						<value>
+						<comps>
+							<li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+								<linearAdjustment>-2</linearAdjustment>
+							</li>
+						</comps>
+						</value>
+					</li>
+				</operations>
+			</match>
+  </Operation>
+</Patch>

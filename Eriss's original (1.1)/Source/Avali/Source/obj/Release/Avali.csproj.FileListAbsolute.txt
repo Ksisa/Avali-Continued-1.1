@@ -1,0 +1,4 @@
+D:\Steam\SteamApps\common\RimWorld\Source\Assemblies\Avali.dll
+D:\Steam\SteamApps\common\RimWorld\Source\Avali\Source\obj\Release\Avali.csprojResolveAssemblyReference.cache
+D:\Steam\SteamApps\common\RimWorld\Source\Avali\Source\obj\Release\Avali.dll
+D:\Steam\SteamApps\common\RimWorld\Mods\Avali\1.1\Assemblies\Avali.dll

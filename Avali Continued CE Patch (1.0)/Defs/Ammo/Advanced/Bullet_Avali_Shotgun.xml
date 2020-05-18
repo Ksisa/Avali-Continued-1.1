@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>AmmoAvaliShotgun</defName>
+      <label>Avali Shotgun</label>
+      <parent>AmmoShotguns</parent>
+      <iconPath>UI/Icons/ThingCategories/CaliberShotgun</iconPath>
+    </ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_AvaliShotgun</defName>
+    <label>Avali Shotgun</label>
+    <ammoTypes>
+      <Ammo_AvaliShotgun>Bullet_AvaliShotgun</Ammo_AvaliShotgun>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" Name="AvaliShotgunBase" ParentName="SmallAmmoBase" Abstract="True">
+    <description>Extremely common Avali shotgun caliber used in almost every application, from hunting over riot control to military firearms.</description>
+    <smallVolume>true</smallVolume>
+    <statBases>
+	  <Mass>0.025</Mass>
+	  <Bulk>0.05</Bulk>
+    </statBases>
+	<tradeTags>
+	  <li>CE_AutoEnableTrade</li>
+	  <li>CE_AutoEnableCrafting</li>
+	</tradeTags>
+    <thingCategories>
+      <li>AmmoAvaliShotgun</li>
+    </thingCategories>
+    <stackLimit>500</stackLimit>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="AvaliShotgunBase">
+    <defName>Ammo_AvaliShotgun</defName>
+    <label>Avali Shotgun shell</label>
+    <graphicData>
+      <texPath>Things/Ammo/Shotgun/Shot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.7</MarketValue>
+    </statBases>
+    <ammoClass>BuckShot</ammoClass>
+    <cookOffProjectile>Bullet_AvaliShotgun</cookOffProjectile>
+  </ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseAvaliShotgunBullet" ParentName="BaseBullet" Abstract="true">
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>125</speed>
+			<dropsCasings>true</dropsCasings>
+			<casingMoteDefname>Mote_ShotgunShell</casingMoteDefname>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseAvaliShotgunBullet">
+		<defName>Bullet_AvaliShotgun</defName>
+		<label>Avali Shotgun pellet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Shotgun_Pellet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>7</damageAmountBase>
+			<pelletCount>10</pelletCount>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<spreadMult>30</spreadMult>
+		</projectile>
+	</ThingDef>
+  
+	<!-- ==================== Recipes ========================== -->
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_AvaliShotgun</defName>
+    <label>make Avali Shotgun shell x200</label>
+    <description>Craft 200 Avali Shotgun shells.</description>
+    <jobString>Making Avali Shotgun shells.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_AvaliShotgun>200</Ammo_AvaliShotgun>
+    </products>
+    <researchPrerequisite>AvaliRailguns</researchPrerequisite>
+  </RecipeDef>
+	
+</Defs>

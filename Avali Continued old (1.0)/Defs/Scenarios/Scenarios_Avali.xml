@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ScenarioDef>
+	<defName>AvaliScenario</defName>
+	<label>Lost Pack</label>
+	<description>While exploring your ship was attacked by an unknown entity. It tore through your ship like a claw through paper and you all barely had a chance to get to the escale pods. You're all lucky that noone was lost. Now, stranded on this planet, you will need to find a way to survive.</description>
+	<scenario>
+		<summary>Your pack barely reached the escape pods before your ship was torn apart.</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>AvaliPlayerColony</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnCount>4</pawnCount>
+        <pawnChoiceCount>4</pawnChoiceCount>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+				<method>DropPods</method>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Silver</thingDef>
+				<count>500</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MealSmallSurvivalPack</thingDef>
+				<count>80</count>
+			</li>
+      <li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>AvaliNanoFibre</thingDef>
+				<count>500</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MedicineUltratech</thingDef>
+				<count>40</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ComponentIndustrial</thingDef>
+				<count>30</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Gun_Avali_Pistol</thingDef>
+				<count>2</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Gun_Avali_Shotgun</thingDef>
+				<count>1</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Gun_Avali_Sniper</thingDef>
+				<count>1</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Steel</thingDef>
+				<count>600</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>ShipChunk</thingDef>
+				<count>3</count>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Steel</thingDef>
+				<count>720</count>
+			</li>
+      
+      <!-- Game start dialog -->
+      <li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>While exploring your ship was attacked by an unknown entity. It tore through your ship like a claw through paper and you all barely had a chance to get to the escale pods. You're all lucky that noone was lost. Now, stranded on this planet, you will need to find a way to survive.\nThis planet has unsuitable for Avali atmosphere.\nThe good thing is all spacefaring Avali augmented with basic thermoregulation and life support system so they will not suffocate and boil alive immediately after landing, the bad - this system not designed to work in such severe for Avali conditions without additional equipment or augments. To survive more than day you colonists must have life support belts or armors with life support system. Minimal summary enviromental protection level must be non less then 15%.</text>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+		</parts>
+	</scenario>
+</ScenarioDef>
+</Defs>
